@@ -27,4 +27,15 @@ fs.readdirSync(root).filter(d => /^\d\d-/.test(d)).forEach(d => {
   if (fs.existsSync(f)) patch(f, false);
 });
 patch(path.join(root, 'index.html'), true);
+
+// real biznes nümunələri (_musteriler) üçün də
+const cfgFile = path.join(__dirname, 'demolar.json');
+if (fs.existsSync(cfgFile)) {
+  const cfg = JSON.parse(fs.readFileSync(cfgFile, 'utf8'));
+  cfg.ownerPhone = pretty;
+  cfg.ownerWhatsapp = digits;
+  fs.writeFileSync(cfgFile, JSON.stringify(cfg, null, 2));
+  require('child_process').execSync('node "' + path.join(__dirname, 'demo-yarat.js') + '"', { stdio: 'inherit' });
+}
 console.log('\nHazırdır! Nömrə:', pretty);
+console.log('İnternetdə yeniləmək üçün:  node _aletler/vercel-yukle.js');
