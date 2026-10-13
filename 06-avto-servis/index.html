@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SÜRƏT AVTO — Avto servis və avtoyuma, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda avto servis: kompüter diaqnostikası, yağ dəyişmə, əyləc, mühərrik təmiri, kondisioner, şin montajı və avtoyuma. Onlayn növbə.">
+<meta property="og:title" content="SÜRƏT AVTO — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#111418">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23ff5a1f'/><text x='50' y='70' font-size='58' font-weight='900' text-anchor='middle' fill='white' font-family='Arial'>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><svg viewBox="0 0 48 24"><path d="M2 18 10 6h26l10 12" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M0 14h14M4 9h8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span data-s="name"></span></a>
+    <nav class="nav">
+      <a href="#services" data-t="nav_services"></a><a href="#wash" data-t="nav_wash"></a><a href="#why" data-t="nav_why"></a><a href="#contact" data-t="nav_contact"></a>
+    </nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <a href="#book" class="btn btn-sm" data-t="book"></a>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <img class="hero-bg" src="img/hero.jpg" alt="">
+  <div class="wrap hero-in">
+    <span class="tag reveal" data-t="hero_tag"></span>
+    <h1 class="reveal d1" data-th="hero_title"></h1>
+    <p class="reveal d2" data-t="hero_text"></p>
+    <div class="cta reveal d3">
+      <a href="#book" class="btn" data-t="hero_cta"></a>
+      <a data-href="tel" class="call"><i>☎</i><span><small data-t="hero_call"></small><b data-s="phone"></b></span></a>
+    </div>
+    <div class="status reveal d4" data-open></div>
+  </div>
+  <div class="kpis">
+    <div class="wrap kpis-in">
+      <div><b>12</b><span data-t="k1"></span></div>
+      <div><b>25K+</b><span data-t="k2"></span></div>
+      <div><b>6</b><span data-t="k3"></span></div>
+      <div><b>15</b><span data-t="k4"></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head reveal"><span class="tag" data-t="svc_tag"></span><h2 data-t="svc_title"></h2></div>
+    <div class="svc-grid" id="svc-grid"></div>
+  </div>
+</section>
+
+<section class="wash" id="wash">
+  <div class="wrap">
+    <div class="head head-row reveal">
+      <div><span class="tag" data-t="wash_tag"></span><h2 data-t="wash_title"></h2></div>
+      <div class="seg" id="seg"><button data-cls="0" class="on" data-t="sedan"></button><button data-cls="1" data-t="suv"></button><button data-cls="2" data-t="van"></button></div>
+    </div>
+    <div class="plans" id="plans"></div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap why-in">
+    <div class="why-img reveal"><img src="img/about.jpg" alt="" loading="lazy"><div class="stamp">6<small data-th="stamp"></small></div></div>
+    <div>
+      <div class="head reveal"><span class="tag" data-t="why_tag"></span><h2 data-t="why_title"></h2></div>
+      <div class="why-list">
+        <div class="reveal"><i>01</i><div><h3 data-t="w1t"></h3><p data-t="w1d"></p></div></div>
+        <div class="reveal d1"><i>02</i><div><h3 data-t="w2t"></h3><p data-t="w2d"></p></div></div>
+        <div class="reveal d2"><i>03</i><div><h3 data-t="w3t"></h3><p data-t="w3d"></p></div></div>
+        <div class="reveal d3"><i>04</i><div><h3 data-t="w4t"></h3><p data-t="w4d"></p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap book-in">
+    <div class="reveal">
+      <span class="tag" data-t="book_tag"></span>
+      <h2 data-t="book_title"></h2>
+      <p data-t="book_text"></p>
+    </div>
+    <form class="form reveal d1" data-wa-form="book_msg">
+      <label><span data-t="f_car"></span><input name="car" required data-label="f_car" placeholder="Toyota Prius"></label>
+      <label><span data-t="f_year"></span><input name="year" type="number" min="1980" max="2027" data-label="f_year" placeholder="2015"></label>
+      <div class="full"><span class="lbl" data-t="f_services"></span><div class="checks" id="checks"></div></div>
+      <label class="full"><span data-t="f_problem"></span><textarea name="problem" rows="2" data-label="f_problem"></textarea></label>
+      <label><span data-t="f_date"></span><input name="date" type="date" required data-label="f_date" id="f-date"></label>
+      <label><span data-t="f_time"></span><input name="time" type="time" value="10:00" data-label="f_time"></label>
+      <label><span data-t="f_name"></span><input name="name" required data-label="f_name"></label>
+      <label><span data-t="f_phone"></span><input name="phone" type="tel" required data-label="f_phone"></label>
+      <button class="btn full" type="submit" data-t="f_send"></button>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="map" data-map></div>
+  <div class="wrap">
+    <div class="c-card reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, cls = 0;
+  function from(p) { var m = Core.money(p); return Core.lang === 'ru' ? Core.t('from') + m : m + Core.t('from'); }
+  function render() {
+    $('#svc-grid').innerHTML = S.services.map(function (s, i) {
+      return '<article class="svc reveal d' + (i % 4) + '"><div class="svc-img"><img src="' + s.img + '" alt="" loading="lazy"></div><div class="svc-b"><h3>' + Core.esc(Core.tr(s.name)) + '</h3><p>' + Core.esc(Core.tr(s.desc)) + '</p><b>' + from(s.price) + '</b></div></article>';
+    }).join('');
+    $('#checks').innerHTML = S.services.map(function (s) {
+      return '<label><input type="checkbox" name="svc" data-label="f_services"><span>' + Core.esc(Core.tr(s.name)) + '</span></label>';
+    }).join('');
+    renderPlans();
+  }
+  function renderPlans() {
+    $('#plans').innerHTML = S.wash.map(function (w, i) {
+      return '<div class="plan reveal d' + i + (w.hot ? ' hot' : '') + '"><h3>' + Core.esc(Core.tr(w.name)) + '</h3><div class="price">' + Core.money(w.prices[cls]) + '</div><ul>' +
+        Core.tr(w.list).map(function (l) { return '<li>' + Core.esc(l) + '</li>'; }).join('') + '</ul><a class="btn ' + (w.hot ? '' : 'btn-line') + '" data-wash="' + i + '">' + Core.t('choose') + '</a></div>';
+    }).join('');
+    Core.$$('#seg button').forEach(function (b) { b.classList.toggle('on', +b.getAttribute('data-cls') === cls); });
+    Core.observe();
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-cls]'); if (b) { cls = +b.getAttribute('data-cls'); renderPlans(); }
+    var w = e.target.closest('[data-wash]');
+    if (w) {
+      var p = S.wash[+w.getAttribute('data-wash')], clsName = Core.t(['sedan', 'suv', 'van'][cls]);
+      Core.openWa(Core.t('wash_msg') + Core.tr(p.name) + ' · ' + clsName + ' · ' + Core.money(p.prices[cls]));
+    }
+  });
+  var d = $('#f-date'), n = new Date(); d.min = d.value = n.toISOString().slice(0, 10);
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

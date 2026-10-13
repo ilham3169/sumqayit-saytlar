@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zirvə Akademiya — Tədris mərkəzi, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda tədris mərkəzi: abituriyent hazırlığı, ingilis və rus dili, IELTS, riyaziyyat, uşaqlar üçün proqramlaşdırma. Pulsuz sınaq dərsi.">
+<meta property="og:title" content="Zirvə Akademiya — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#3b3bb3">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%233b3bb3'/><path d='M20 70 50 22l30 48z' fill='%23ffd23f'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><svg viewBox="0 0 40 40"><path d="M4 34 20 6l16 28z" fill="#ffd23f"/><path d="M14 34l6-10 6 10" fill="#3b3bb3"/></svg><span data-s="name"></span></a>
+    <nav class="nav"><a href="#courses" data-t="nav_courses"></a><a href="#results" data-t="nav_results"></a><a href="#teachers" data-t="nav_teachers"></a><a href="#schedule" data-t="nav_schedule"></a><a href="#contact" data-t="nav_contact"></a></nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <span class="pill reveal" data-t="hero_pill"></span>
+      <h1 class="reveal d1" data-th="hero_title"></h1>
+      <p class="lead reveal d2" data-t="hero_text"></p>
+      <div class="btns reveal d3"><a href="#trial" class="btn btn-y" data-t="trial"></a><a href="#courses" class="btn btn-o" data-t="hero_cta2"></a></div>
+    </div>
+    <div class="hero-pic reveal d2">
+      <img src="img/hero.jpg" alt="">
+      <div class="hs hs1"><b>1 200+</b><span data-t="h1"></span></div>
+      <div class="hs hs2"><b>94%</b><span data-t="h2"></span></div>
+      <div class="hs hs3"><b>≤ 8</b><span data-t="h3"></span></div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40c240 40 480 40 720 0s480-40 720 0v40H0z" fill="#f7f7fc"/></svg>
+</section>
+
+<section class="courses" id="courses">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="courses_kicker"></p><h2 data-t="courses_title"></h2></div>
+    <div class="filter reveal" id="filter"></div>
+    <div class="c-grid" id="c-grid"></div>
+  </div>
+</section>
+
+<section class="results" id="results">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="results_kicker"></p><h2 data-t="results_title"></h2></div>
+    <div class="r-grid" id="r-grid"></div>
+  </div>
+</section>
+
+<section class="teachers" id="teachers">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="teachers_kicker"></p><h2 data-t="teachers_title"></h2></div>
+    <div class="t-grid" id="t-grid"></div>
+  </div>
+</section>
+
+<section class="schedule" id="schedule">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="schedule_kicker"></p><h2 data-t="schedule_title"></h2></div>
+    <div class="table-wrap reveal"><table id="sched"></table></div>
+  </div>
+</section>
+
+<section class="trial" id="trial">
+  <div class="wrap trial-in">
+    <div class="reveal">
+      <h2 data-t="form_title"></h2>
+      <p data-t="form_text"></p>
+      <img src="img/about.jpg" alt="" loading="lazy">
+    </div>
+    <form class="form reveal d1" data-wa-form="form_msg">
+      <label><span data-t="f_student"></span><input name="student" required data-label="f_student"></label>
+      <label><span data-t="f_age"></span><input name="age" required data-label="f_age"></label>
+      <label class="full"><span data-t="f_course"></span><select name="course" id="f-course" data-label="f_course"></select></label>
+      <div class="full"><span class="lbl" data-t="f_time"></span><div class="seg3"><label><input type="radio" name="t" data-label="f_time"><span data-t="morning"></span></label><label><input type="radio" name="t" data-label="f_time"><span data-t="day"></span></label><label><input type="radio" name="t" checked data-label="f_time"><span data-t="evening"></span></label></div></div>
+      <label class="full"><span data-t="f_parent"></span><input name="phone" type="tel" required data-label="f_parent"></label>
+      <button class="btn btn-y full" type="submit" data-t="f_send"></button>
+    </form>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap faq-in">
+    <div class="head reveal"><p class="kicker" data-t="faq_kicker"></p></div>
+    <div id="faq"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, g = 'all';
+  var DAYS = { az: ['B.e.', 'Ç.a.', 'Çər.', 'C.a.', 'Cümə', 'Şənbə'], ru: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'] };
+  function render() {
+    $('#filter').innerHTML = [{ id: 'all', name: { az: Core.t('all'), ru: Core.t('all') } }].concat(S.groups).map(function (x) {
+      return '<button class="' + (x.id === g ? 'on' : '') + '" data-g="' + x.id + '">' + Core.esc(Core.tr(x.name)) + '</button>';
+    }).join('');
+    $('#c-grid').innerHTML = S.courses.filter(function (c) { return g === 'all' || c.g === g; }).map(function (c, i) {
+      return '<article class="course reveal d' + (i % 3) + '" style="--cc:' + c.color + '"><div class="c-img"><img src="' + c.img + '" alt="" loading="lazy"><span>' + Core.esc(Core.tr(S.groups.find(function (x) { return x.id === c.g; }).name)) + '</span></div>' +
+        '<div class="c-b"><h3>' + Core.esc(Core.tr(c.name)) + '</h3><p>' + Core.esc(Core.tr(c.desc)) + '</p><ul><li>⏱ ' + Core.t('duration') + ': ' + Core.esc(Core.tr(c.dur)) + '</li><li>📅 ' + c.lessons + ' ' + Core.t('lessons') + '</li></ul>' +
+        '<div class="c-f"><b>' + Core.money(c.price) + '<small>' + Core.t('month') + '</small></b><a href="#trial" data-course="' + S.courses.indexOf(c) + '">' + Core.t('apply') + '</a></div></div></article>';
+    }).join('');
+    $('#r-grid').innerHTML = S.results.map(function (r, i) {
+      return '<div class="res reveal d' + i + '"><b data-count="' + r.score + '">' + r.score + '</b><span>' + Core.t('points') + '</span><h3>' + Core.esc(r.name) + '</h3><p>' + Core.esc(Core.tr(r.uni)) + '</p></div>';
+    }).join('');
+    $('#t-grid').innerHTML = S.teachers.map(function (t, i) {
+      return '<article class="teacher reveal d' + i + '"><img src="' + t.img + '" alt="' + t.name + '" loading="lazy"><h3>' + t.name + '</h3><p>' + Core.esc(Core.tr(t.subj)) + '</p></article>';
+    }).join('');
+    var days = Core.tr(DAYS);
+    $('#sched').innerHTML = '<thead><tr><th>' + Core.t('time') + '</th>' + days.map(function (d) { return '<th>' + d + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      S.schedule.map(function (r) { return '<tr>' + r.map(function (c, i) { return i ? '<td>' + (c ? '<span>' + Core.esc(c) + '</span>' : '') + '</td>' : '<th>' + c + '</th>'; }).join('') + '</tr>'; }).join('') + '</tbody>';
+    $('#f-course').innerHTML = S.courses.map(function (c) { return '<option>' + Core.esc(Core.tr(c.name)) + '</option>'; }).join('');
+    $('#faq').innerHTML = S.faq.map(function (f, i) { return '<details class="reveal"' + (i ? '' : ' open') + '><summary>' + Core.esc(Core.tr(f.q)) + '</summary><p>' + Core.esc(Core.tr(f.a)) + '</p></details>'; }).join('');
+    Core.observe();
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-g]'); if (b) { g = b.getAttribute('data-g'); render(); }
+    var c = e.target.closest('[data-course]'); if (c) $('#f-course').selectedIndex = +c.getAttribute('data-course');
+  });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

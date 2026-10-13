@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lalə Beauty — Gözəllik studiyası, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda gözəllik salonu: manikür, pedikür, qaş, kirpik, makiyaj və saç xidmətləri. Onlayn yazılış WhatsApp ilə.">
+<meta property="og:title" content="Lalə Beauty — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#f7efe9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23b76e79'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia' font-style='italic'>L</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="promo" data-th="promo"></div>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo">Lalə<span>beauty studio</span></a>
+    <nav class="nav">
+      <a href="#services" data-t="nav_services"></a>
+      <a href="#masters" data-t="nav_masters"></a>
+      <a href="#gallery" data-t="nav_gallery"></a>
+      <a href="#faq" data-t="nav_faq"></a>
+      <a href="#contact" data-t="nav_contact"></a>
+    </nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button>/<button data-lang="ru">RU</button></div>
+      <a href="#book" class="btn btn-sm" data-t="book"></a>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <p class="kicker reveal" data-t="hero_kicker"></p>
+      <h1 class="reveal d1" data-th="hero_title"></h1>
+      <p class="lead reveal d2" data-t="hero_text"></p>
+      <div class="btns reveal d3"><a href="#book" class="btn" data-t="hero_cta"></a><a href="#services" class="btn btn-line" data-t="hero_cta2"></a></div>
+      <p class="reveal d4"><span class="open" data-open></span></p>
+    </div>
+    <div class="hero-art reveal d2">
+      <div class="arch"><img src="img/hero.jpg" alt=""></div>
+      <div class="arch arch-sm"><img src="img/about.jpg" alt=""></div>
+      <svg class="flower" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M50 50c0-18 8-30 0-40-8 10 0 22 0 40zM50 50c18 0 30 8 40 0-10-8-22 0-40 0zM50 50c0 18-8 30 0 40 8-10 0-22 0-40zM50 50c-18 0-30-8-40 0 10 8 22 0 40 0z"/><circle cx="50" cy="50" r="5"/></g></svg>
+    </div>
+  </div>
+  <div class="wrap trust">
+    <span data-t="trust1"></span><span data-t="trust2"></span><span data-t="trust3"></span><span data-t="trust4"></span>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="svc_kicker"></p><h2 data-t="svc_title"></h2></div>
+    <div class="svc">
+      <div class="svc-tabs" id="svc-tabs"></div>
+      <div class="svc-panel" id="svc-panel"></div>
+    </div>
+  </div>
+</section>
+
+<section class="masters" id="masters">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="masters_kicker"></p><h2 data-t="masters_title"></h2></div>
+    <div class="m-grid" id="m-grid"></div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="gallery_kicker"></p><h2 data-t="gallery_title"></h2></div>
+    <div class="g-grid" id="g-grid"></div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap book-in">
+    <div class="book-txt reveal">
+      <p class="kicker" data-t="book_kicker"></p>
+      <h2 data-t="book_title"></h2>
+      <p data-t="book_text"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+    </div>
+    <form class="book-form reveal d1" data-wa-form="book_msg">
+      <label><span data-t="f_cat"></span><select id="f-cat"></select></label>
+      <label><span data-t="f_service"></span><select name="service" id="f-svc" data-label="f_service"></select></label>
+      <label><span data-t="f_master"></span><select name="master" id="f-master" data-label="f_master"></select></label>
+      <label><span data-t="f_date"></span><input type="date" name="date" id="f-date" required data-label="f_date"></label>
+      <label><span data-t="f_time"></span><select name="time" id="f-time" data-label="f_time"></select></label>
+      <label><span data-t="f_promo"></span><input name="promo" placeholder="İLK15" data-label="f_promo"></label>
+      <label><span data-t="f_name"></span><input name="name" required data-label="f_name"></label>
+      <label><span data-t="f_phone"></span><input name="phone" type="tel" required data-label="f_phone"></label>
+      <button class="btn full" type="submit" data-t="f_send"></button>
+    </form>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-in">
+    <div class="head reveal"><p class="kicker" data-t="faq_kicker"></p><h2 data-t="faq_title"></h2></div>
+    <div id="faq-list"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="c-info reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap ftr-in"><span class="logo">Lalə<span>beauty studio</span></span><span>© <span data-year></span> · <span data-t="rights"></span></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, active = S.categories[0].id, catSel = S.categories[0].id;
+  function price(it) {
+    var m = Core.money(it.price);
+    return it.from ? (Core.lang === 'ru' ? Core.t('from') + m : m + Core.t('from')) : m;
+  }
+  function renderSvc() {
+    $('#svc-tabs').innerHTML = S.categories.map(function (c) {
+      return '<button class="' + (c.id === active ? 'on' : '') + '" data-c="' + c.id + '"><img src="' + c.img + '" alt=""><span>' + Core.esc(Core.tr(c.name)) + '</span></button>';
+    }).join('');
+    var c = S.categories.find(function (x) { return x.id === active; });
+    $('#svc-panel').innerHTML = '<div class="panel-img"><img src="' + c.img + '" alt=""></div><div class="panel-list"><h3>' + Core.esc(Core.tr(c.name)) + '</h3>' +
+      c.items.map(function (it, i) {
+        return '<div class="row"><div><b>' + Core.esc(Core.tr(it.name)) + '</b><small>' + it.min + ' ' + Core.t('min') + '</small></div><span>' + price(it) + '</span><a href="#book" data-bk="' + c.id + ':' + i + '" aria-label="book">→</a></div>';
+      }).join('') + '</div>';
+  }
+  function renderMasters() {
+    $('#m-grid').innerHTML = S.masters.map(function (m, i) {
+      return '<article class="m reveal d' + i + '"><div class="m-img"><img src="' + m.img + '" alt="' + m.name + '" loading="lazy"></div><h3>' + m.name + '</h3><p>' + Core.esc(Core.tr(m.role)) + '</p><small>' + m.years + '+ ' + (Core.lang === 'ru' ? 'лет опыта' : 'il təcrübə') + '</small></article>';
+    }).join('');
+  }
+  function renderGallery() {
+    $('#g-grid').innerHTML = S.gallery.map(function (g, i) { return '<button class="g reveal d' + (i % 3) + '" data-img="' + g + '"><img src="' + g + '" alt="" loading="lazy"></button>'; }).join('');
+  }
+  function renderFaq() {
+    $('#faq-list').innerHTML = S.faq.map(function (f, i) {
+      return '<details class="reveal d' + (i % 3) + '"' + (i === 0 ? ' open' : '') + '><summary>' + Core.esc(Core.tr(f.q)) + '<i></i></summary><p>' + Core.esc(Core.tr(f.a)) + '</p></details>';
+    }).join('');
+  }
+  function renderForm(svcIndex) {
+    $('#f-cat').innerHTML = S.categories.map(function (c) { return '<option value="' + c.id + '"' + (c.id === catSel ? ' selected' : '') + '>' + Core.esc(Core.tr(c.name)) + '</option>'; }).join('');
+    var c = S.categories.find(function (x) { return x.id === catSel; });
+    $('#f-svc').innerHTML = c.items.map(function (it, i) { return '<option' + (i === svcIndex ? ' selected' : '') + '>' + Core.esc(Core.tr(it.name)) + ' — ' + price(it) + '</option>'; }).join('');
+    $('#f-master').innerHTML = '<option>' + Core.t('any') + '</option>' + S.masters.map(function (m) { return '<option>' + m.name + ' — ' + Core.esc(Core.tr(m.role)) + '</option>'; }).join('');
+    renderTimes();
+  }
+  function renderTimes() {
+    var d = $('#f-date'), day = new Date(d.value + 'T00:00').getDay(), h = S.hours[day], html = '';
+    if (h) { var p = h.split('-'), a = +p[0].split(':')[0], b = +p[1].split(':')[0]; for (var x = a; x < b; x++) { html += '<option>' + x + ':00</option><option>' + x + ':30</option>'; } }
+    $('#f-time').innerHTML = html || '<option value="">' + Core.t('closed') + '</option>';
+  }
+  var d = $('#f-date'), now = new Date(); d.min = d.value = new Date(now - now.getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
+  d.addEventListener('change', renderTimes);
+  $('#f-cat').addEventListener('change', function (e) { catSel = e.target.value; renderForm(0); });
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest('[data-c]'); if (t) { active = t.getAttribute('data-c'); renderSvc(); }
+    var b = e.target.closest('[data-bk]'); if (b) { var p = b.getAttribute('data-bk').split(':'); catSel = p[0]; renderForm(+p[1]); }
+    var g = e.target.closest('[data-img]'); if (g) Core.modal('<img src="' + g.getAttribute('data-img') + '" style="width:100%;display:block">', 'lightbox');
+  });
+  Core.on('lang', function () { renderSvc(); renderMasters(); renderGallery(); renderFaq(); renderForm(0); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EvTap — Daşınmaz əmlak agentliyi, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda mənzil, həyət evi və ofis satışı və kirayəsi. Sənədləri yoxlanılmış elanlar, ipoteka kalkulyatoru, pulsuz qiymətləndirmə.">
+<meta property="og:title" content="EvTap — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#14213d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2314213d'/><path d='M20 52 50 26l30 26v26H58V60H42v18H20z' fill='%23ff6b4a'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><svg viewBox="0 0 40 40"><path d="M6 20 20 8l14 12v14H24v-9h-8v9H6z" fill="currentColor"/></svg><span data-s="name"></span><em>Sumqayıt</em></a>
+    <nav class="nav"><a href="#list" data-t="nav_list"></a><a href="#calc" data-t="nav_calc"></a><a href="#sell" data-t="nav_sell"></a><a href="#contact" data-t="nav_contact"></a></nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <a data-href="tel" class="hdr-tel" data-s="phone"></a>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <img class="hero-bg" src="img/hero.jpg" alt="">
+  <div class="wrap hero-in">
+    <h1 class="reveal" data-th="hero_title"></h1>
+    <p class="reveal d1" data-t="hero_text"></p>
+    <form class="finder reveal d2" id="finder">
+      <div class="deal" id="deal"><button type="button" data-deal="sale" class="on" data-t="sale"></button><button type="button" data-deal="rent" data-t="rent"></button></div>
+      <div class="fields">
+        <label><span data-t="type"></span><select id="f-type"></select></label>
+        <label><span data-t="rooms"></span><select id="f-rooms"><option value="0" data-t="any"></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4+</option></select></label>
+        <label><span data-t="max_price"></span><input id="f-max" type="number" min="0" step="1000" placeholder="₼"></label>
+        <button class="btn" type="submit" data-t="search"></button>
+      </div>
+    </form>
+    <div class="hstats reveal d3"><div><b>350+</b><span data-t="st1"></span></div><div><b>1 800</b><span data-t="st2"></span></div><div><b>11</b><span data-t="st3"></span></div></div>
+  </div>
+</section>
+
+<section class="list" id="list">
+  <div class="wrap">
+    <div class="list-head reveal"><h2 data-t="list_title"></h2><span id="count"></span></div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section class="calc" id="calc">
+  <div class="wrap calc-in">
+    <div class="reveal">
+      <h2 data-t="calc_title"></h2>
+      <p data-t="calc_text"></p>
+      <img src="img/about.jpg" alt="" loading="lazy">
+    </div>
+    <div class="calc-box reveal d1">
+      <label><span data-t="c_price"></span><b id="v-price"></b><input type="range" id="c-price" min="20000" max="400000" step="1000" value="90000"></label>
+      <label><span data-t="c_down"></span><b id="v-down"></b><input type="range" id="c-down" min="10" max="70" step="5" value="20"></label>
+      <label><span data-t="c_years"></span><b id="v-years"></b><input type="range" id="c-years" min="3" max="30" step="1" value="20"></label>
+      <label><span data-t="c_rate"></span><b id="v-rate"></b><input type="range" id="c-rate" min="4" max="18" step="0.5" value="8"></label>
+      <div class="result"><div><span data-t="c_monthly"></span><b id="r-month"></b></div><div><span data-t="c_loan"></span><b id="r-loan"></b></div></div>
+      <button class="btn btn-full" id="c-ask" data-t="c_ask"></button>
+    </div>
+  </div>
+</section>
+
+<section class="sell" id="sell">
+  <div class="wrap sell-in">
+    <div class="reveal"><h2 data-t="sell_title"></h2><p data-t="sell_text"></p></div>
+    <form class="form reveal d1" data-wa-form="sell_msg">
+      <label><span data-t="f_deal"></span><select name="deal" data-label="f_deal"><option data-t="sale"></option><option data-t="rent"></option></select></label>
+      <label><span data-t="f_type"></span><select name="type" data-label="f_type"><option data-t="flat_new"></option><option data-t="flat_old"></option><option data-t="house"></option><option data-t="office"></option></select></label>
+      <label><span data-t="f_addr"></span><input name="addr" required data-label="f_addr"></label>
+      <label><span data-t="f_area"></span><input name="area" data-label="f_area" placeholder="80 m², 3"></label>
+      <label><span data-t="f_name"></span><input name="name" required data-label="f_name"></label>
+      <label><span data-t="f_phone"></span><input name="phone" type="tel" required data-label="f_phone"></label>
+      <button class="btn full" type="submit" data-t="f_send"></button>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, f = { deal: 'sale', type: '', rooms: 0, max: 0 };
+  var TYPES = ['flat_new', 'flat_old', 'house', 'office'];
+  function fmt(n) { return Math.round(n).toLocaleString('ru-RU').replace(/,/g, ' ') + ' ₼'; }
+  function render() {
+    var cur = $('#f-type').value;
+    $('#f-type').innerHTML = '<option value="">' + Core.t('any') + '</option>' + TYPES.map(function (t) { return '<option value="' + t + '"' + (t === cur ? ' selected' : '') + '>' + Core.t(t) + '</option>'; }).join('');
+    renderCards(); calc();
+  }
+  function renderCards() {
+    Core.$$('#deal button').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-deal') === f.deal); });
+    var list = S.listings.filter(function (l) {
+      return l.deal === f.deal && (!f.type || l.type === f.type) && (!f.rooms || (f.rooms >= 4 ? l.rooms >= 4 : l.rooms === f.rooms)) && (!f.max || l.price <= f.max);
+    });
+    $('#count').textContent = list.length + ' ' + Core.t('found');
+    $('#cards').innerHTML = list.length ? list.map(function (l, i) {
+      return '<article class="card reveal d' + (i % 3) + '" data-id="' + l.id + '"><div class="card-img"><img src="' + l.img + '" alt="" loading="lazy"><span class="type">' + Core.t(l.type) + '</span>' + (l.hot ? '<span class="hot">TOP</span>' : '') + '</div>' +
+        '<div class="card-b"><div class="price">' + fmt(l.price) + (l.deal === 'rent' ? '<small>' + Core.t('per_month') + '</small>' : '') + '</div>' +
+        (l.deal === 'sale' ? '<div class="ppm">' + fmt(l.price / l.area) + ' / ' + Core.t('m2') + '</div>' : '') +
+        '<p class="loc">📍 ' + Core.esc(Core.tr(l.loc)) + '</p><div class="specs"><span>🛏 ' + l.rooms + ' ' + Core.t('room_s') + '</span><span>📐 ' + l.area + ' ' + Core.t('m2') + '</span><span>🏢 ' + l.floor + '</span></div>' +
+        '<div class="tags">' + l.tags.map(function (t) { return '<i>' + Core.t(t) + '</i>'; }).join('') + '</div></div></article>';
+    }).join('') : '<p class="none">' + Core.t('none') + '</p>';
+    Core.observe($('#cards'));
+  }
+  function detail(id) {
+    var l = S.listings.find(function (x) { return x.id === id; });
+    var title = l.rooms + ' ' + Core.t('room_s') + ' ' + Core.t(l.type).toLowerCase() + ', ' + l.area + ' ' + Core.t('m2');
+    var m = Core.modal('<div class="dt"><img src="' + l.img + '" alt=""><div class="dt-b"><span class="type">' + Core.t(l.deal) + ' · ' + Core.t(l.type) + '</span><h3>' + Core.esc(title) + '</h3><div class="price">' + fmt(l.price) + (l.deal === 'rent' ? '<small>' + Core.t('per_month') + '</small>' : '') + '</div>' +
+      '<ul><li><span data-t="rooms"></span><b>' + l.rooms + '</b></li><li><span>' + Core.t('m2') + '</span><b>' + l.area + '</b></li><li><span data-t="floor"></span><b>' + l.floor + '</b></li><li><span>📍</span><b>' + Core.esc(Core.tr(l.loc)) + '</b></li></ul>' +
+      '<div class="tags">' + l.tags.map(function (t) { return '<i>' + Core.t(t) + '</i>'; }).join('') + '</div><button class="btn btn-full dt-wa">' + Core.t('book_view') + '</button></div></div>');
+    m.el.querySelector('.dt-wa').addEventListener('click', function () { Core.openWa(Core.t('view_msg') + '#' + l.id + ' — ' + title + ', ' + Core.tr(l.loc) + ', ' + fmt(l.price)); });
+  }
+  var lastCalc = '';
+  function calc() {
+    var p = +$('#c-price').value, d = +$('#c-down').value, y = +$('#c-years').value, r = +$('#c-rate').value;
+    var loan = p * (1 - d / 100), mr = r / 1200, n = y * 12, pay = loan * mr / (1 - Math.pow(1 + mr, -n));
+    $('#v-price').textContent = fmt(p); $('#v-down').textContent = d + '% · ' + fmt(p * d / 100); $('#v-years').textContent = y; $('#v-rate').textContent = r + '%';
+    $('#r-month').textContent = fmt(pay); $('#r-loan').textContent = fmt(loan);
+    lastCalc = Core.t('c_price') + ': ' + fmt(p) + ', ' + Core.t('c_down') + ': ' + d + '%, ' + y + ' ' + (Core.lang === 'ru' ? 'лет' : 'il') + ', ' + r + '% → ' + fmt(pay) + Core.t('per_month');
+  }
+  ['#c-price', '#c-down', '#c-years', '#c-rate'].forEach(function (s) { $(s).addEventListener('input', calc); });
+  $('#c-ask').addEventListener('click', function () { Core.openWa(Core.t('c_msg') + lastCalc); });
+  $('#finder').addEventListener('submit', function (e) {
+    e.preventDefault();
+    f.type = $('#f-type').value; f.rooms = +$('#f-rooms').value; f.max = +$('#f-max').value || 0;
+    renderCards(); $('#list').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.addEventListener('click', function (e) {
+    var d = e.target.closest('[data-deal]'); if (d) { f.deal = d.getAttribute('data-deal'); renderCards(); }
+    var c = e.target.closest('.card[data-id]'); if (c) detail(+c.getAttribute('data-id'));
+  });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

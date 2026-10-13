@@ -1,0 +1,8 @@
+_satis/
+_deploy/
+_yukle/
+.vercel/
+node_modules/
+*.log
+Thumbs.db
+desktop.ini

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Usta Mebel — Sifarişlə mebel, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda sifarişlə mebel: mətbəx, qarderob, yataq və uşaq otağı. Pulsuz ölçü, 3D dizayn, 14 gündə hazır, 5 il zəmanət. Onlayn qiymət kalkulyatoru.">
+<meta property="og:title" content="Usta Mebel — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#2b211b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%232b211b'/><rect x='22' y='30' width='56' height='40' rx='4' fill='none' stroke='%23c08a5b' stroke-width='6'/><path d='M50 30v40M30 76v6M70 76v6' stroke='%23c08a5b' stroke-width='6'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><b>U</b><span data-s="name"></span></a>
+    <nav class="nav"><a href="#works" data-t="nav_works"></a><a href="#calc" data-t="nav_calc"></a><a href="#process" data-t="nav_process"></a><a href="#contact" data-t="nav_contact"></a></nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <a href="#measure" class="btn btn-sm" data-t="measure"></a>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-txt">
+    <p class="kicker reveal" data-t="hero_kicker"></p>
+    <h1 class="reveal d1" data-th="hero_title"></h1>
+    <p class="lead reveal d2" data-t="hero_text"></p>
+    <div class="btns reveal d3"><a href="#measure" class="btn" data-t="measure"></a><a href="#calc" class="btn btn-line" data-t="hero_cta2"></a></div>
+    <div class="bul reveal d4"><div><b>14</b><span data-t="b1"></span></div><div><b>5</b><span data-t="b2"></span></div><div><b>900+</b><span data-t="b3"></span></div></div>
+  </div>
+  <div class="hero-img reveal d1"><img src="img/hero.jpg" alt=""><span class="open-tag" data-open></span></div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="head reveal"><div><p class="kicker" data-t="works_kicker"></p><h2 data-t="works_title"></h2></div><div class="filter" id="filter"></div></div>
+    <div class="w-grid" id="w-grid"></div>
+  </div>
+</section>
+
+<section class="calc" id="calc">
+  <div class="wrap calc-in">
+    <div class="calc-l reveal">
+      <p class="kicker" data-t="calc_kicker"></p>
+      <h2 data-t="calc_title"></h2>
+      <div class="grp"><span data-t="c_shape"></span><div class="chips" id="o-shape"></div></div>
+      <div class="grp"><span><span data-t="c_len"></span>: <b id="len-v"></b></span><input type="range" id="len" min="1.5" max="8" step="0.5" value="3.5"></div>
+      <div class="grp"><span data-t="c_facade"></span><div class="chips" id="o-facade"></div></div>
+      <div class="grp"><span data-t="c_top"></span><div class="chips" id="o-top"></div></div>
+      <div class="grp"><span data-t="c_extra"></span><div class="chips" id="o-extra"></div></div>
+    </div>
+    <div class="calc-r reveal d1">
+      <div class="sum-card">
+        <span data-t="c_total"></span>
+        <b id="total"></b>
+        <ul id="breakdown"></ul>
+        <p data-t="c_note"></p>
+        <button class="btn btn-full" id="c-send" data-t="c_send"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="head reveal"><div><p class="kicker" data-t="process_kicker"></p><h2 data-t="process_title"></h2></div></div>
+    <div class="steps">
+      <div class="reveal"><em>01</em><h3 data-t="p1"></h3><p data-t="p1d"></p></div>
+      <div class="reveal d1"><em>02</em><h3 data-t="p2"></h3><p data-t="p2d"></p></div>
+      <div class="reveal d2"><em>03</em><h3 data-t="p3"></h3><p data-t="p3d"></p></div>
+      <div class="reveal d3"><em>04</em><h3 data-t="p4"></h3><p data-t="p4d"></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="measure" id="measure">
+  <div class="wrap m-in">
+    <img class="reveal" src="img/about.jpg" alt="" loading="lazy">
+    <div class="reveal d1">
+      <h2 data-t="form_title"></h2>
+      <p data-t="form_text"></p>
+      <form class="form" data-wa-form="form_msg">
+        <label class="full"><span data-t="f_what"></span><select name="what" data-label="f_what" id="f-what"></select></label>
+        <label class="full"><span data-t="f_addr"></span><input name="addr" required data-label="f_addr"></label>
+        <label><span data-t="f_name"></span><input name="name" required data-label="f_name"></label>
+        <label><span data-t="f_phone"></span><input name="phone" type="tel" required data-label="f_phone"></label>
+        <button class="btn full" type="submit" data-t="f_send"></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, C = S.calc, cat = 'all';
+  var st = { shape: 1, facade: 1, top: 1, extra: [0] };
+  function fmt(n) { return Math.round(n).toLocaleString('ru-RU') + ' ₼'; }
+  function render() {
+    $('#filter').innerHTML = [{ id: 'all', name: { az: Core.t('all'), ru: Core.t('all') } }].concat(S.cats).map(function (c) {
+      return '<button class="' + (c.id === cat ? 'on' : '') + '" data-cat="' + c.id + '">' + Core.esc(Core.tr(c.name)) + '</button>';
+    }).join('');
+    $('#w-grid').innerHTML = S.works.filter(function (w) { return cat === 'all' || w.cat === cat; }).map(function (w, i) {
+      return '<figure class="w reveal d' + (i % 4) + '" data-img="' + w.img + '"><img src="' + w.img + '" alt="" loading="lazy"><figcaption><b>' + Core.esc(Core.tr(w.name)) + '</b><span>' + (Core.lang === 'ru' ? 'от ' : '') + fmt(w.price) + (Core.lang === 'ru' ? '' : '-dan') + '</span></figcaption></figure>';
+    }).join('');
+    $('#f-what').innerHTML = S.cats.map(function (c) { return '<option>' + Core.esc(Core.tr(c.name)) + '</option>'; }).join('');
+    chips('shape', C.shapes); chips('facade', C.facades); chips('top', C.tops);
+    $('#o-extra').innerHTML = C.extras.map(function (o, i) { return '<label><input type="checkbox" value="' + i + '"' + (st.extra.indexOf(i) > -1 ? ' checked' : '') + '><span>' + Core.esc(Core.tr(o.n)) + ' <em>+' + o.p + '</em></span></label>'; }).join('');
+    calc(); Core.observe();
+  }
+  function chips(k, arr) {
+    $('#o-' + k).innerHTML = arr.map(function (o, i) { return '<label><input type="radio" name="' + k + '" value="' + i + '"' + (st[k] === i ? ' checked' : '') + '><span>' + Core.esc(Core.tr(o.n)) + '</span></label>'; }).join('');
+  }
+  var summary = '';
+  function calc() {
+    var len = +$('#len').value, sh = C.shapes[st.shape], fa = C.facades[st.facade], tp = C.tops[st.top];
+    var body = fa.p * len * sh.k, top = tp.p * len * sh.k, ex = st.extra.reduce(function (s, i) { return s + C.extras[i].p; }, 0);
+    var total = body + top + ex;
+    $('#len-v').textContent = len + ' m';
+    $('#total').textContent = fmt(total);
+    $('#breakdown').innerHTML = '<li><span>' + Core.esc(Core.tr(fa.n)) + ' · ' + len + ' m · ' + Core.esc(Core.tr(sh.n)) + '</span><b>' + fmt(body) + '</b></li><li><span>' + Core.esc(Core.tr(tp.n)) + '</span><b>' + fmt(top) + '</b></li>' +
+      st.extra.map(function (i) { return '<li><span>' + Core.esc(Core.tr(C.extras[i].n)) + '</span><b>' + fmt(C.extras[i].p) + '</b></li>'; }).join('');
+    summary = '\n' + Core.t('c_shape') + ': ' + Core.tr(sh.n) + '\n' + Core.t('c_len') + ': ' + len + '\n' + Core.t('c_facade') + ': ' + Core.tr(fa.n) + '\n' + Core.t('c_top') + ': ' + Core.tr(tp.n) +
+      (st.extra.length ? '\n' + Core.t('c_extra') + ': ' + st.extra.map(function (i) { return Core.tr(C.extras[i].n); }).join(', ') : '') + '\n' + Core.t('c_total') + ': ' + fmt(total);
+  }
+  $('#calc').addEventListener('change', function (e) {
+    var t = e.target;
+    if (t.type === 'radio') st[t.name] = +t.value;
+    if (t.type === 'checkbox') st.extra = Core.$$('#o-extra input:checked').map(function (x) { return +x.value; });
+    calc();
+  });
+  $('#len').addEventListener('input', calc);
+  $('#c-send').addEventListener('click', function () { Core.openWa(Core.t('c_msg') + summary); });
+  document.addEventListener('click', function (e) {
+    var c = e.target.closest('[data-cat]'); if (c) { cat = c.getAttribute('data-cat'); render(); }
+    var w = e.target.closest('[data-img]'); if (w) Core.modal('<img src="' + w.getAttribute('data-img') + '" style="width:100%;display:block">');
+  });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

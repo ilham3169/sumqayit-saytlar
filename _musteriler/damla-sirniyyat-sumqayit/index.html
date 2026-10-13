@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Damla Şirniyyat — Sifarişlə tortlar, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda sifarişlə tortlar: ad günü, toy, uşaq tortları, napoleon, medovik, çizkeyk. Fərdi tort konstruktoru və WhatsApp sifarişi.">
+<meta property="og:title" content="Damla Şirniyyat — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#fdf3ef">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🎂</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><span class="logo-ico">🎂</span><span data-s="name"></span></a>
+    <nav class="nav">
+      <a href="#cakes" data-t="nav_cakes"></a><a href="#custom" data-t="nav_custom"></a><a href="#sweets" data-t="nav_sweets"></a><a href="#contact" data-t="nav_contact"></a>
+    </nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-in">
+    <div>
+      <p class="hand reveal" data-t="hero_hand"></p>
+      <h1 class="reveal d1" data-th="hero_title"></h1>
+      <p class="lead reveal d2" data-t="hero_text"></p>
+      <div class="btns reveal d3"><a href="#cakes" class="btn" data-t="hero_cta"></a><a href="#custom" class="btn btn-soft" data-t="hero_cta2"></a></div>
+      <div class="stats reveal d4">
+        <div><b>15 000+</b><span data-t="s1"></span></div>
+        <div><b>24</b><span data-t="s2"></span></div>
+        <div><b>100%</b><span data-t="s3"></span></div>
+      </div>
+    </div>
+    <div class="hero-pic reveal d2">
+      <img src="img/hero.jpg" alt="">
+      <span class="sticker" data-open></span>
+    </div>
+  </div>
+</section>
+
+<section class="cakes" id="cakes">
+  <div class="wrap">
+    <div class="head reveal"><p class="hand" data-t="cakes_hand"></p><h2 data-t="cakes_title"></h2></div>
+    <div class="cake-grid" id="cake-grid"></div>
+  </div>
+</section>
+
+<section class="custom" id="custom">
+  <div class="wrap custom-in">
+    <div class="preview reveal">
+      <p class="hand" data-t="custom_hand"></p>
+      <h2 data-t="custom_title"></h2>
+      <p data-t="custom_text"></p>
+      <svg id="cake-svg" viewBox="0 0 300 260" aria-hidden="true">
+        <ellipse cx="150" cy="232" rx="135" ry="16" fill="#e9d6cc"/>
+        <rect id="l1" x="40" y="150" width="220" height="70" rx="12"/>
+        <rect id="cr1" x="40" y="142" width="220" height="14" rx="7"/>
+        <rect id="l2" x="70" y="80" width="160" height="66" rx="12"/>
+        <rect id="cr2" x="70" y="72" width="160" height="14" rx="7"/>
+        <g id="fruits"><circle cx="100" cy="70" r="9" fill="#e5484d"/><circle cx="130" cy="66" r="9" fill="#5b3fd0"/><circle cx="165" cy="68" r="9" fill="#e5484d"/><circle cx="198" cy="70" r="9" fill="#5b3fd0"/></g>
+        <g id="candle"><rect x="145" y="30" width="10" height="40" rx="3" fill="#f6c453"/><path d="M150 12c6 8 6 13 0 16-6-3-6-8 0-16z" fill="#ff8a3d"/></g>
+        <text id="cake-txt" x="150" y="192" text-anchor="middle" font-family="Caveat" font-size="26" fill="#fff"></text>
+      </svg>
+    </div>
+    <form class="builder reveal d1" data-wa-form="c_msg" id="builder">
+      <div class="opt"><span data-t="c_biscuit"></span><div class="chips" id="o-biscuit"></div></div>
+      <div class="opt"><span data-t="c_cream"></span><div class="chips" id="o-cream"></div></div>
+      <div class="opt"><span data-t="c_filling"></span><div class="chips" id="o-filling"></div></div>
+      <div class="opt"><span data-t="c_decor"></span><div class="chips" id="o-decor"></div></div>
+      <div class="opt"><span data-t="c_weight"></span><div class="chips" id="o-weight"></div></div>
+      <div class="row2">
+        <label><span data-t="c_text"></span><input name="text" maxlength="30" data-label="c_text" id="c-text" placeholder="Ad günün mübarək!"></label>
+        <label><span data-t="c_date"></span><input name="date" type="date" required data-label="c_date" id="c-date"></label>
+        <label><span data-t="c_name"></span><input name="name" required data-label="c_name"></label>
+        <label><span data-t="c_phone"></span><input name="phone" type="tel" required data-label="c_phone"></label>
+      </div>
+      <div class="total"><span data-t="c_price"></span><input name="price" readonly data-label="c_price" id="c-price"></div>
+      <button class="btn btn-full" type="submit" data-t="c_send"></button>
+      <small data-t="c_note"></small>
+    </form>
+  </div>
+</section>
+
+<section class="sweets" id="sweets">
+  <div class="wrap">
+    <div class="head reveal"><p class="hand" data-t="sweets_hand"></p><h2 data-t="sweets_title"></h2></div>
+    <div class="sweet-grid" id="sweet-grid"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a class="tel" data-href="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, B = S.builder;
+  var BISCUIT_COL = ['#f3d9a4', '#6b3e2e', '#b3283b', '#c79a64'], CREAM_COL = ['#fffaf3', '#f7efe2', '#4a2a1e'];
+  var sel = { biscuit: 0, cream: 0, filling: 1, decor: 1, weight: 1 };
+
+  function cakeCard(it, i) {
+    var unit = it.kind === 'kg' ? Core.t('per_kg') : '';
+    return '<article class="cake reveal d' + (i % 4) + '"><div class="cake-img"><img src="' + it.img + '" alt="' + Core.esc(Core.tr(it.name)) + '" loading="lazy">' + (it.hit ? '<span class="hit">★ Hit</span>' : '') + '</div>' +
+      '<h3>' + Core.esc(Core.tr(it.name)) + '</h3><p>' + Core.esc(Core.tr(it.desc)) + '</p><div class="cake-foot"><b>' + Core.money(it.price) + '<small>' + unit + '</small></b>' +
+      (it.kind === 'kg' ? '<button data-cake="' + it.id + '">' + Core.t('order') + '</button>' : '<button data-add="' + it.id + '">+</button>') + '</div></article>';
+  }
+  function render() {
+    $('#cake-grid').innerHTML = S.items.filter(function (x) { return x.kind === 'kg'; }).map(cakeCard).join('');
+    $('#sweet-grid').innerHTML = S.items.filter(function (x) { return x.kind !== 'kg'; }).map(cakeCard).join('');
+    ['biscuit', 'cream', 'filling', 'decor'].forEach(function (k) {
+      $('#o-' + k).innerHTML = B[k].map(function (o, i) {
+        return '<label><input type="radio" name="' + k + '" value="' + i + '" data-label="c_' + k + '"' + (sel[k] === i ? ' checked' : '') + '><span>' + Core.esc(Core.tr(o.n)) + (o.p ? ' <em>+' + o.p + '</em>' : '') + '</span></label>';
+      }).join('');
+    });
+    $('#o-weight').innerHTML = S.weights.map(function (w, i) {
+      return '<label><input type="radio" name="weight" value="' + i + '" data-label="c_weight"' + (sel.weight === i ? ' checked' : '') + '><span>' + w + ' ' + Core.t('kg') + '</span></label>';
+    }).join('');
+    Core.observe();
+    calc();
+  }
+  function calc() {
+    var w = S.weights[sel.weight];
+    var perKg = B.base + B.biscuit[sel.biscuit].p + B.cream[sel.cream].p + B.filling[sel.filling].p;
+    var total = Math.round(perKg * w + B.decor[sel.decor].p);
+    $('#c-price').value = Core.money(total) + ' (' + w + ' ' + Core.t('kg') + ', ' + Core.t('serves', { n: Math.round(w * 6) }) + ')';
+    $('#l1').setAttribute('fill', BISCUIT_COL[sel.biscuit]); $('#l2').setAttribute('fill', BISCUIT_COL[sel.biscuit]);
+    $('#cr1').setAttribute('fill', CREAM_COL[sel.cream]); $('#cr2').setAttribute('fill', CREAM_COL[sel.cream]);
+    $('#fruits').style.display = sel.decor === 1 ? '' : 'none';
+    var two = w >= 2;
+    $('#l2').style.display = $('#cr2').style.display = two ? '' : 'none';
+    $('#fruits').setAttribute('transform', two ? '' : 'translate(-37.5 54) scale(1.25)');
+    $('#candle').setAttribute('transform', two ? '' : 'translate(0 70)');
+    $('#cake-txt').textContent = $('#c-text').value;
+    $('#cake-txt').setAttribute('fill', sel.biscuit === 0 ? '#6b3e2e' : '#fff');
+  }
+  function orderCake(id) {
+    var it = S.items.find(function (x) { return x.id === id; }), wi = 0;
+    var m = Core.modal('<div class="cm"><img src="' + it.img + '" alt=""><div class="cm-b"><h3>' + Core.esc(Core.tr(it.name)) + '</h3><p>' + Core.esc(Core.tr(it.desc)) + '</p><p class="lbl">' + Core.t('weight') + '</p><div class="chips" id="cm-w">' +
+      S.weights.map(function (w, i) { return '<label><input type="radio" name="cw" value="' + i + '"' + (i === 0 ? ' checked' : '') + '><span>' + w + ' ' + Core.t('kg') + '</span></label>'; }).join('') +
+      '</div><p class="cm-p"></p><button class="btn btn-full cm-add">' + Core.t('add') + '</button></div></div>');
+    function upd() { var w = S.weights[wi]; m.el.querySelector('.cm-p').innerHTML = '<b>' + Core.money(it.price * w) + '</b> · ' + Core.t('serves', { n: Math.round(w * 6) }); }
+    upd();
+    m.el.addEventListener('change', function (e) { if (e.target.name === 'cw') { wi = +e.target.value; upd(); } });
+    m.el.querySelector('.cm-add').addEventListener('click', function () { var w = S.weights[wi]; Core.cart.add(it.id, w + ' ' + Core.t('kg'), it.price * w); m.close(); });
+  }
+  $('#builder').addEventListener('change', function (e) { if (sel[e.target.name] != null) { sel[e.target.name] = +e.target.value; calc(); } });
+  $('#c-text').addEventListener('input', calc);
+  var d = $('#c-date'), t = new Date(Date.now() + 864e5); d.min = d.value = t.toISOString().slice(0, 10);
+  document.addEventListener('click', function (e) { var c = e.target.closest('[data-cake]'); if (c) orderCake(c.getAttribute('data-cake')); });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

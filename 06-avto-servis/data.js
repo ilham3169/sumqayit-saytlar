@@ -1,0 +1,87 @@
+/* ============================================================
+   SAYTIN MƏZMUNU — müştəri üçün yalnız bu faylı dəyişin.
+   ============================================================ */
+window.SITE = {
+  id: 'suret-avto',
+  name: 'SÜRƏT AVTO',
+  schemaType: 'AutoRepair',
+  phone: '+994 55 000 00 00',
+  whatsapp: '994550000000',
+  instagram: 'suret.avto.servis',
+  address: { az: 'Sumqayıt, Bakı-Sumqayıt yolu, 7-ci km (yanacaq doldurma məntəqəsinin yanı)', ru: 'Сумгайыт, трасса Баку–Сумгайыт, 7-й км (рядом с АЗС)' },
+  map: { lat: 40.5770, lng: 49.6790, zoom: 16 },
+  hours: ['09:00-18:00', '08:30-20:00', '08:30-20:00', '08:30-20:00', '08:30-20:00', '08:30-20:00', '08:30-20:00'],
+
+  t: {
+    nav_services: { az: 'Xidmətlər', ru: 'Услуги' },
+    nav_wash: { az: 'Avtoyuma', ru: 'Автомойка' },
+    nav_why: { az: 'Niyə biz', ru: 'Почему мы' },
+    nav_contact: { az: 'Əlaqə', ru: 'Контакты' },
+    book: { az: 'Növbə al', ru: 'Записаться' },
+    hero_tag: { az: 'Avto servis · Avtoyuma · Diaqnostika', ru: 'Автосервис · Автомойка · Диагностика' },
+    hero_title: { az: 'Maşınınız<br><span>etibarlı əllərdə</span>', ru: 'Ваш автомобиль<br><span>в надёжных руках</span>' },
+    hero_text: { az: 'Kompüter diaqnostikası, yağ dəyişmə, əyləc, mühərrik təmiri, kondisioner və premium avtoyuma — bir ünvanda. Zəmanətli iş, şəffaf qiymət.', ru: 'Компьютерная диагностика, замена масла, тормоза, ремонт двигателя, кондиционер и премиальная мойка — в одном месте. Гарантия на работы, прозрачные цены.' },
+    hero_cta: { az: 'Onlayn növbə al', ru: 'Записаться онлайн' },
+    hero_call: { az: 'Zəng et', ru: 'Позвонить' },
+    k1: { az: 'il təcrübə', ru: 'лет опыта' },
+    k2: { az: 'maşın təmir olunub', ru: 'авто обслужено' },
+    k3: { az: 'ay zəmanət', ru: 'мес. гарантии' },
+    k4: { az: 'dəq. diaqnostika', ru: 'мин. диагностика' },
+    svc_tag: { az: 'Xidmətlər', ru: 'Услуги' },
+    svc_title: { az: 'Nə edirik?', ru: 'Что мы делаем?' },
+    from: { az: '-dan', ru: 'от ' },
+    wash_tag: { az: 'Avtoyuma', ru: 'Автомойка' },
+    wash_title: { az: 'Yuma paketləri', ru: 'Пакеты мойки' },
+    sedan: { az: 'Sedan', ru: 'Седан' },
+    suv: { az: 'Krossover / SUV', ru: 'Кроссовер / SUV' },
+    van: { az: 'Minivan / Jip', ru: 'Минивэн / Джип' },
+    choose: { az: 'Seç', ru: 'Выбрать' },
+    stamp: { az: 'ay<br>zəmanət', ru: 'мес.<br>гарантии' },
+    why_tag: { az: 'Niyə biz?', ru: 'Почему мы?' },
+    why_title: { az: 'Sürprizsiz servis', ru: 'Сервис без сюрпризов' },
+    w1t: { az: 'Qiymət əvvəlcədən', ru: 'Цена заранее' },
+    w1d: { az: 'İşə başlamazdan əvvəl dəqiq qiyməti deyirik. Razılığınız olmadan heç nə etmirik.', ru: 'Называем точную цену до начала работ. Ничего не делаем без вашего согласия.' },
+    w2t: { az: 'Köhnə hissələr sizə', ru: 'Старые детали — вам' },
+    w2d: { az: 'Dəyişdirilmiş hissələri sizə qaytarırıq — hər şey şəffafdır.', ru: 'Возвращаем заменённые детали — всё прозрачно.' },
+    w3t: { az: 'Zəmanət 6 ay', ru: 'Гарантия 6 месяцев' },
+    w3d: { az: 'Görülən işə və quraşdırılan hissələrə rəsmi zəmanət.', ru: 'Официальная гарантия на работы и установленные запчасти.' },
+    w4t: { az: 'Gözləmə zalı', ru: 'Зона ожидания' },
+    w4d: { az: 'Pulsuz çay-qəhvə, Wi-Fi və televizor.', ru: 'Бесплатный чай-кофе, Wi-Fi и телевизор.' },
+    book_tag: { az: 'Onlayn növbə', ru: 'Онлайн-запись' },
+    book_title: { az: 'Növbəsiz gəlin', ru: 'Приезжайте без очереди' },
+    book_text: { az: 'Formu doldurun, ustamız WhatsApp-da qiyməti və vaxtı təsdiq etsin.', ru: 'Заполните форму — мастер подтвердит цену и время в WhatsApp.' },
+    f_car: { az: 'Marka / model', ru: 'Марка / модель' },
+    f_year: { az: 'Buraxılış ili', ru: 'Год выпуска' },
+    f_services: { az: 'Xidmət(lər)', ru: 'Услуга(и)' },
+    f_problem: { az: 'Problemi qısa yazın', ru: 'Кратко опишите проблему' },
+    f_date: { az: 'Tarix', ru: 'Дата' },
+    f_time: { az: 'Saat', ru: 'Время' },
+    f_name: { az: 'Adınız', ru: 'Ваше имя' },
+    f_phone: { az: 'Telefon', ru: 'Телефон' },
+    f_send: { az: 'WhatsApp ilə göndər', ru: 'Отправить в WhatsApp' },
+    book_msg: { az: 'Salam! Servisə yazılmaq istəyirəm:', ru: 'Здравствуйте! Хочу записаться в сервис:' },
+    wash_msg: { az: 'Salam! Avtoyuma üçün növbə istəyirəm: ', ru: 'Здравствуйте! Хочу записаться на мойку: ' },
+    contact_title: { az: 'Bizi necə tapmaq olar', ru: 'Как нас найти' },
+    hours_title: { az: 'İş saatları', ru: 'Часы работы' },
+    route: { az: 'Marşrut qur', ru: 'Построить маршрут' },
+    rights: { az: 'Bütün hüquqlar qorunur.', ru: 'Все права защищены.' }
+  },
+
+  services: [
+    { img: 'img/s-diag.jpg', price: 15, name: { az: 'Kompüter diaqnostikası', ru: 'Компьютерная диагностика' }, desc: { az: 'Bütün sistemlərin skaneri, xəta kodlarının oxunması', ru: 'Сканирование всех систем, чтение кодов ошибок' } },
+    { img: 'img/s-oil.jpg', price: 10, name: { az: 'Yağ və filtr dəyişmə', ru: 'Замена масла и фильтров' }, desc: { az: 'Mühərrik, sürətlər qutusu, hava və salon filtri', ru: 'Двигатель, КПП, воздушный и салонный фильтр' } },
+    { img: 'img/s-tire.jpg', price: 20, name: { az: 'Şin montajı və balans', ru: 'Шиномонтаж и балансировка' }, desc: { az: '4 təkər, R13–R22, mövsümi saxlama', ru: '4 колеса, R13–R22, сезонное хранение' } },
+    { img: 'img/s-brake.jpg', price: 25, name: { az: 'Əyləc sistemi', ru: 'Тормозная система' }, desc: { az: 'Kolodka, disk, əyləc mayesi', ru: 'Колодки, диски, тормозная жидкость' } },
+    { img: 'img/s-engine.jpg', price: 80, name: { az: 'Mühərrik təmiri', ru: 'Ремонт двигателя' }, desc: { az: 'Kapital və cari təmir, qayış dəyişmə', ru: 'Капитальный и текущий ремонт, замена ремня' } },
+    { img: 'img/s-ac.jpg', price: 30, name: { az: 'Kondisioner doldurma', ru: 'Заправка кондиционера' }, desc: { az: 'Freon, sızma testi, dezinfeksiya', ru: 'Фреон, проверка утечек, дезинфекция' } },
+    { img: 'img/s-detail.jpg', price: 60, name: { az: 'Polirovka və keramika', ru: 'Полировка и керамика' }, desc: { az: 'Kuzov parıltısı, qoruyucu örtük', ru: 'Блеск кузова, защитное покрытие' } },
+    { img: 'img/s-wash.jpg', price: 8, name: { az: 'Avtoyuma', ru: 'Автомойка' }, desc: { az: 'Kontaktsız yuma, salon təmizliyi', ru: 'Бесконтактная мойка, чистка салона' } }
+  ],
+
+  // avtoyuma: qiymətlər [sedan, suv, van]
+  wash: [
+    { name: { az: 'Ekspress', ru: 'Экспресс' }, prices: [8, 10, 12], list: { az: ['Kuzov aktiv köpüklə', 'Təkərlər', 'Qurulama'], ru: ['Кузов активной пеной', 'Диски', 'Сушка'] } },
+    { name: { az: 'Kompleks', ru: 'Комплекс' }, prices: [15, 18, 22], hot: true, list: { az: ['Ekspress paket', 'Salonun tozsoranı', 'Panel və şüşələr', 'Xalçaların yuyulması'], ru: ['Пакет Экспресс', 'Пылесос салона', 'Панель и стёкла', 'Мойка ковриков'] } },
+    { name: { az: 'Premium', ru: 'Премиум' }, prices: [35, 42, 50], list: { az: ['Kompleks paket', 'Mum örtüyü', 'Dəri salona qulluq', 'Mühərrik bölməsi', 'Ətir'], ru: ['Пакет Комплекс', 'Восковое покрытие', 'Уход за кожей', 'Мойка моторного отсека', 'Ароматизация'] } }
+  ]
+};

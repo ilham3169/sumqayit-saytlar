@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KRAL BARBER — Kişi bərbərxanası, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda kişi bərbərxanası: saç kəsimi, fade, saqqal dizaynı, ülgüclə qırxma. Onlayn növbə WhatsApp ilə.">
+<meta property="og:title" content="KRAL BARBER — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d0d0d'/><text x='50' y='72' font-size='64' text-anchor='middle' fill='%23c9a66b' font-family='Impact'>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><svg viewBox="0 0 32 32"><path d="M4 24 8 8l8 9 8-9 4 16z"/></svg><span data-s="name"></span></a>
+    <nav class="nav">
+      <a href="#services" data-t="nav_services"></a>
+      <a href="#team" data-t="nav_team"></a>
+      <a href="#works" data-t="nav_works"></a>
+      <a href="#contact" data-t="nav_contact"></a>
+    </nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <a href="#book" class="btn btn-sm" data-t="book_now"></a>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-img"><img src="img/hero.jpg" alt=""></div>
+  <div class="wrap hero-in">
+    <div class="hero-badge reveal"><span data-open></span></div>
+    <h1>
+      <span class="l reveal" data-t="hero_l1"></span>
+      <span class="l gold reveal d1" data-t="hero_l2"></span>
+      <span class="l small reveal d2" data-t="hero_l3"></span>
+    </h1>
+    <p class="reveal d3" data-t="hero_text"></p>
+    <div class="hero-cta reveal d4">
+      <a href="#book" class="btn" data-t="book_now"></a>
+      <a href="#services" class="link-arrow"><span data-t="nav_services"></span> →</a>
+    </div>
+    <div class="metrics reveal d4">
+      <div><b>8+</b><span data-t="m1"></span></div>
+      <div><b>12K</b><span data-t="m2"></span></div>
+      <div><b>4.9</b><span data-t="m3"></span></div>
+    </div>
+  </div>
+  <div class="ticker"><div class="ticker-in" id="ticker"></div></div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head reveal"><span class="kicker" data-t="svc_kicker"></span><h2 data-t="svc_title"></h2></div>
+    <div class="price-list" id="svc"></div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="head reveal"><span class="kicker" data-t="team_kicker"></span><h2 data-t="team_title"></h2></div>
+    <div class="team-grid" id="team-grid"></div>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="head head-row reveal"><div><span class="kicker" data-t="works_kicker"></span><h2 data-t="works_title"></h2></div><a data-href="insta" class="link-arrow"><span data-t="insta_more"></span> →</a></div>
+    <div class="works-grid" id="works-grid"></div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap book-in">
+    <div class="book-side reveal">
+      <span class="kicker" data-t="book_kicker"></span>
+      <h2 data-t="book_title"></h2>
+      <p data-t="book_text"></p>
+      <img src="img/about.jpg" alt="" loading="lazy">
+    </div>
+    <form class="book-form reveal d1" data-wa-form="book_msg" id="bf">
+      <div class="step"><i>01</i><label><span data-t="f_service"></span><select name="service" id="f-service" data-label="f_service"></select></label></div>
+      <div class="step"><i>02</i><label><span data-t="f_master"></span><select name="master" id="f-master" data-label="f_master"></select></label></div>
+      <div class="step"><i>03</i><label><span data-t="f_date"></span><input type="date" name="date" id="f-date" required data-label="f_date"></label></div>
+      <div class="step"><i>04</i><div class="lbl"><span data-t="f_time"></span><div class="slots" id="slots"></div></div></div>
+      <div class="two">
+        <label><span data-t="f_name"></span><input name="name" required data-label="f_name"></label>
+        <label><span data-t="f_phone"></span><input name="phone" type="tel" required data-label="f_phone"></label>
+      </div>
+      <div class="sum" id="sum"></div>
+      <button class="btn btn-full" type="submit" data-t="f_send"></button>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p class="addr" data-s="address"></p>
+      <a data-href="tel" class="phone" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$;
+  var state = { service: S.services[3].id, master: '', time: '' };
+  var dateEl = $('#f-date');
+  var today = new Date(); dateEl.min = iso(today); dateEl.value = iso(today);
+  function iso(d) { return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); }
+
+  function renderServices() {
+    $('#svc').innerHTML = S.services.map(function (s, i) {
+      return '<div class="pl-row reveal d' + (i % 3) + (s.hot ? ' hot' : '') + '"><div class="pl-name"><h3>' + Core.esc(Core.tr(s.name)) + '</h3><small>' + Core.esc(Core.tr(s.desc)) + ' · ' + s.min + ' ' + Core.t('min') + '</small></div><span class="pl-dots"></span><b>' + Core.money(s.price) + '</b><button data-pick="' + s.id + '">' + Core.t('pick') + '</button></div>';
+    }).join('');
+    $('#ticker').innerHTML = new Array(3).join(S.services.map(function (s) { return '<span>' + Core.esc(Core.tr(s.name)) + '</span><em>✦</em>'; }).join(''));
+  }
+  function renderTeam() {
+    $('#team-grid').innerHTML = S.team.map(function (m, i) {
+      return '<article class="member reveal d' + i + '"><div class="m-img"><img src="' + m.img + '" alt="' + m.name + '" loading="lazy"></div><div class="m-info"><h3>' + m.name + '</h3><p>' + Core.esc(Core.tr(m.role)) + '</p><small>' + m.years + ' ' + Core.t('exp') + '</small><button data-master="' + m.name + '">' + Core.t('with_master') + ' →</button></div></article>';
+    }).join('');
+  }
+  function renderWorks() {
+    $('#works-grid').innerHTML = S.works.map(function (src, i) { return '<figure class="reveal d' + (i % 3) + '"><img src="' + src + '" alt="" loading="lazy"></figure>'; }).join('');
+  }
+  function renderForm() {
+    $('#f-service').innerHTML = S.services.map(function (s) {
+      return '<option value="' + s.id + '"' + (s.id === state.service ? ' selected' : '') + '>' + Core.esc(Core.tr(s.name)) + ' — ' + Core.money(s.price) + '</option>';
+    }).join('');
+    $('#f-master').innerHTML = '<option value="">' + Core.t('any_master') + '</option>' + S.team.map(function (m) {
+      return '<option' + (m.name === state.master ? ' selected' : '') + '>' + m.name + '</option>';
+    }).join('');
+    renderSlots(); renderSum();
+  }
+  function renderSlots() {
+    var d = new Date(dateEl.value + 'T00:00'), h = S.hours[d.getDay()], html = '';
+    if (h) {
+      var p = h.split('-'), a = toM(p[0]), b = toM(p[1]), now = new Date();
+      var isToday = dateEl.value === iso(now), nowM = now.getHours() * 60 + now.getMinutes();
+      for (var m = a; m <= b - 30; m += S.slotStep) {
+        var t = pad(Math.floor(m / 60)) + ':' + pad(m % 60), past = isToday && m < nowM + 15;
+        html += '<label class="slot' + (past ? ' off' : '') + '"><input type="radio" name="time" value="' + t + '" data-label="f_time"' + (past ? ' disabled' : '') + (t === state.time ? ' checked' : '') + ' required><span>' + t + '</span></label>';
+      }
+    }
+    $('#slots').innerHTML = html || '<em>—</em>';
+  }
+  function renderSum() {
+    var s = S.services.find(function (x) { return x.id === state.service; });
+    $('#sum').innerHTML = '<span>' + Core.esc(Core.tr(s.name)) + ' · ' + s.min + ' ' + Core.t('min') + '</span><b>' + Core.money(s.price) + '</b>';
+  }
+  function toM(t) { var p = t.split(':'); return +p[0] * 60 + +p[1]; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+  document.addEventListener('click', function (e) {
+    var p = e.target.closest('[data-pick]'), m = e.target.closest('[data-master]');
+    if (p) { state.service = p.getAttribute('data-pick'); renderForm(); location.hash = 'book'; }
+    if (m) { state.master = m.getAttribute('data-master'); renderForm(); location.hash = 'book'; }
+  });
+  $('#f-service').addEventListener('change', function (e) { state.service = e.target.value; renderSum(); });
+  $('#f-master').addEventListener('change', function (e) { state.master = e.target.value; });
+  dateEl.addEventListener('change', function () { state.time = ''; renderSlots(); });
+  $('#slots').addEventListener('change', function (e) { state.time = e.target.value; });
+
+  Core.on('lang', function () { renderServices(); renderTeam(); renderWorks(); renderForm(); });
+})();
+</script>
+</body>
+</html>

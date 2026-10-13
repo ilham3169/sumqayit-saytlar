@@ -1,0 +1,156 @@
+{
+  "_izah": "Real bizneslər üçün nümunə saytlar. 'node _aletler/demo-yarat.js' ilə _musteriler/ qovluğunda yaranır. ownerWhatsapp = SİZİN nömrəniz (sifarişlər sizə gəlir).",
+  "ownerPhone": "+994 50 000 00 00",
+  "ownerWhatsapp": "994500000000",
+  "showcaseUrl": "https://sumqayit-sayt.vercel.app",
+  "sites": [
+    {
+      "slug": "ocaq-basi-sumqayit",
+      "demo": "01-kafe-restoran",
+      "name": "Ocaq Başı",
+      "lat": 40.581046,
+      "lng": 49.67764,
+      "address": {
+        "az": "Sumqayıt şəhəri",
+        "ru": "г. Сумгайыт"
+      },
+      "hide": [
+        ".hero-stats > div:first-child"
+      ],
+      "html": [
+        [
+          "<span class=\"logo-mark\">X</span>",
+          "<span class=\"logo-mark\">O</span>"
+        ]
+      ],
+      "js": "Object.assign(SITE.t, { hero_kicker: { az: 'Sumqayıt · Milli mətbəx', ru: 'Сумгайыт · Национальная кухня' }, hero_title: { az: 'Ocaqdan süfrəyə —<br><em>ev dadı</em>', ru: 'От очага к столу —<br><em>домашний вкус</em>' }, hero_text: { az: 'Kömürdə kabab, qazanda plov, təndir çörəyi və ətirli çay. Ailə ilə, dostlarla və ya iş görüşü üçün.', ru: 'Шашлык на углях, плов в казане, тандырный хлеб и ароматный чай. Для семьи, друзей и деловых встреч.' }, f3_t: { az: 'Rahat zal', ru: 'Уютный зал' }, f3_d: { az: 'Ailəvi atmosfer, ayrıca otaqlar.', ru: 'Семейная атмосфера, отдельные комнаты.' }, about_title: { az: 'Ocaq Başı — ev kimi isti', ru: 'Ocaq Başı — тепло, как дома' } });"
+    },
+    {
+      "slug": "gentleman-berber-sumqayit",
+      "demo": "02-barbershop",
+      "name": "Gentleman Bərbər",
+      "lat": 40.583568,
+      "lng": 49.67138,
+      "address": {
+        "az": "Sumqayıt şəhəri",
+        "ru": "г. Сумгайыт"
+      },
+      "hide": [
+        ".metrics > div:last-child"
+      ]
+    },
+    {
+      "slug": "h-beauty-studio-sumqayit",
+      "demo": "03-gozellik-salonu",
+      "name": "H Beauty Studio",
+      "lat": 40.574727,
+      "lng": 49.684044,
+      "address": {
+        "az": "Sumqayıt, 9-cu mikrorayon",
+        "ru": "Сумгайыт, 9-й микрорайон"
+      },
+      "html": [
+        [
+          "Lalə<span>beauty studio</span>",
+          "H Beauty<span>studio</span>"
+        ]
+      ]
+    },
+    {
+      "slug": "gulum-gul-salonu-sumqayit",
+      "demo": "04-gul-evi",
+      "name": "Gülüm Gül Salonu",
+      "lat": 40.591186,
+      "lng": 49.674723,
+      "address": {
+        "az": "Sumqayıt, 20 Yanvar küçəsi",
+        "ru": "Сумгайыт, ул. 20 Января"
+      }
+    },
+    {
+      "slug": "damla-sirniyyat-sumqayit",
+      "demo": "05-tort-sirniyyat",
+      "name": "Damla Şirniyyat",
+      "lat": 40.584881,
+      "lng": 49.679797,
+      "address": {
+        "az": "Sumqayıt şəhəri",
+        "ru": "г. Сумгайыт"
+      }
+    },
+    {
+      "slug": "dent-house-sumqayit",
+      "demo": "07-stomatologiya",
+      "name": "Dent House",
+      "lat": 40.583621,
+      "lng": 49.671439,
+      "address": {
+        "az": "Sumqayıt şəhəri",
+        "ru": "г. Сумгайыт"
+      },
+      "html": [
+        [
+          "<b>Dr. Elçin</b>",
+          "<b>Dent House</b>"
+        ]
+      ],
+      "hide": [
+        ".rating > div:last-child"
+      ],
+      "js": "SITE.doctors.forEach(function (d, i) { d.name = ['Baş həkim', 'Ortodont', 'Terapevt'][i]; }); SITE.t.rights = { az: 'Bütün hüquqlar qorunur.', ru: 'Все права защищены.' };"
+    },
+    {
+      "slug": "premium-fitness-sumqayit",
+      "demo": "09-fitnes",
+      "name": "Premium Fitness",
+      "lat": 40.594302,
+      "lng": 49.682581,
+      "address": {
+        "az": "Sumqayıt şəhəri",
+        "ru": "г. Сумгайыт"
+      }
+    },
+    {
+      "slug": "xaqani-service-sumqayit",
+      "demo": "10-telefon-temiri",
+      "name": "Xaqani Service",
+      "lat": 40.587941,
+      "lng": 49.673764,
+      "address": {
+        "az": "Sumqayıt, Sülh küçəsi 12/17",
+        "ru": "Сумгайыт, ул. Сюльх 12/17"
+      }
+    },
+    {
+      "slug": "tunar-dizayn-sumqayit",
+      "demo": "13-mebel",
+      "name": "Tunar Dizayn",
+      "lat": 40.584827,
+      "lng": 49.67897,
+      "address": {
+        "az": "Sumqayıt şəhəri",
+        "ru": "г. Сумгайыт"
+      },
+      "html": [
+        [
+          "<b>U</b>",
+          "<b>T</b>"
+        ]
+      ]
+    },
+    {
+      "slug": "nergiz-fast-food-sumqayit",
+      "demo": "15-fast-food",
+      "name": "Nərgiz",
+      "lat": 40.582054,
+      "lng": 49.677858,
+      "address": {
+        "az": "Sumqayıt şəhəri",
+        "ru": "г. Сумгайыт"
+      },
+      "hide": [
+        ".info > div:nth-child(2)"
+      ]
+    }
+  ]
+}

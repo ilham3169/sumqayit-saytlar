@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nərgiz — Çatdırılma, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda dönər, burger, qutab və pizza çatdırılması. 30 dəqiqəyə qapında, WhatsApp ilə sifariş, 20 ₼-dan pulsuz çatdırılma.">
+<meta property="og:title" content="Nərgiz — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#ffcc00">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🌯</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><span>🌯</span><b data-s="name"></b></a>
+    <div class="hdr-r">
+      <span class="open" data-open></span>
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <a data-href="tel" class="call" aria-label="call">📞</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <span class="badge reveal" data-t="hero_badge"></span>
+      <h1 class="reveal d1" data-th="hero_title"></h1>
+      <p class="reveal d2" data-t="hero_text"></p>
+      <a href="#menu" class="btn reveal d3" data-t="hero_cta"></a>
+      <div class="info reveal d4"><div><b>30</b><span data-t="i1"></span></div><div><b>4.8★</b><span data-t="i2"></span></div><div><b>02:00</b><span data-t="i3"></span></div></div>
+    </div>
+    <div class="hero-pic reveal d1"><img src="img/hero.jpg" alt=""><span class="sticker">-20%</span></div>
+  </div>
+</section>
+
+<section class="combo wrap reveal">
+  <img src="img/f-fries.jpg" alt="" loading="lazy">
+  <div><h3 data-t="combo_t"></h3><p><s data-t="combo_d"></s> <b>7.5 ₼</b></p></div>
+  <button class="btn btn-dark" data-add="combo" data-t="combo_btn"></button>
+</section>
+
+<section class="menu" id="menu">
+  <div class="catbar" id="catbar"><div class="wrap catbar-in" id="cats"></div></div>
+  <div class="wrap">
+    <div class="menu-head"><h2 data-t="menu_title"></h2><input id="q" type="search" data-tp="search"></div>
+    <div id="menu-list"></div>
+  </div>
+</section>
+
+<section class="how wrap">
+  <h2 class="reveal" data-t="how_t"></h2>
+  <div class="how-steps">
+    <div class="reveal"><i>🛒</i><span data-t="how1"></span></div>
+    <div class="reveal d1"><i>📍</i><span data-t="how2"></span></div>
+    <div class="reveal d2"><i>✅</i><span data-t="how3"></span></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, q = '';
+  function render() {
+    $('#cats').innerHTML = S.categories.map(function (c) { return '<a href="#cat-' + c.id + '" data-c="' + c.id + '">' + c.ico + ' ' + Core.esc(Core.tr(c.name)) + '</a>'; }).join('');
+    $('#menu-list').innerHTML = S.categories.map(function (c) {
+      var items = S.items.filter(function (it) { return it.cat === c.id && (!q || (Core.tr(it.name) + ' ' + Core.tr(it.desc)).toLowerCase().indexOf(q) > -1); });
+      if (!items.length) return '';
+      return '<div class="cat-block" id="cat-' + c.id + '"><h3 class="cat-title">' + c.ico + ' ' + Core.esc(Core.tr(c.name)) + '</h3><div class="items">' + items.map(function (it, i) {
+        return '<article class="it reveal d' + (i % 3) + '"><img src="' + it.img + '" alt="" loading="lazy"><div class="it-b"><h4>' + Core.esc(Core.tr(it.name)) + (it.hit ? ' <em class="hit">HIT</em>' : '') + (it.spicy ? ' <em class="hot" title="' + Core.t('spicy') + '">🌶</em>' : '') + '</h4><p>' + Core.esc(Core.tr(it.desc)) + '</p><div class="it-f"><b>' + Core.money(it.price) + '</b><button data-add="' + it.id + '">+ ' + Core.t('add') + '</button></div></div></article>';
+      }).join('') + '</div></div>';
+    }).join('');
+    Core.observe($('#menu-list'));
+  }
+  $('#q').addEventListener('input', function (e) { q = e.target.value.trim().toLowerCase(); render(); });
+  // highlight current category in the sticky bar
+  window.addEventListener('scroll', function () {
+    var cur = '';
+    Core.$$('.cat-block').forEach(function (b) { if (b.getBoundingClientRect().top < 160) cur = b.id.slice(4); });
+    Core.$$('#cats a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-c') === cur); });
+  }, { passive: true });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

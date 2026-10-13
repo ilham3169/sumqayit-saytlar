@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sayt Studiyası — Sumqayıt bizneslər üçün saytlar</title>
+<meta name="description" content="Sumqayıtda kiçik bizneslər üçün müasir saytlar: kafe, bərbər, gözəllik salonu, gül mağazası, avto servis və s. WhatsApp sifarişi, AZ/RU dil, 3 günə hazır. 100 ₼-dan.">
+<meta property="og:title" content="Biznesiniz üçün sayt — 100 ₼-dan">
+<meta property="og:image" content="_vitrin/thumbs/01-kafe-restoran.jpg">
+<meta name="theme-color" content="#0f0f14">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236d5efc'/><path d='M28 34h44M28 50h30M28 66h38' stroke='white' stroke-width='8' stroke-linecap='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0f14;--card:#17171f;--card2:#1e1e28;--ink:#f3f3f7;--muted:#9a9aae;--violet:#6d5efc;--violet2:#8b7fff;--green:#25d366;--line:rgba(255,255,255,.08);--c-accent:#6d5efc;--c-on-accent:#fff;--c-surface:#17171f;--c-text:#f3f3f7;--c-muted:#9a9aae;--c-line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0 0 .45em;line-height:1.1;font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(28px,4vw,46px)}
+.wrap{width:min(1240px,100% - 32px);margin-inline:auto}
+section{scroll-margin-top:70px}
+.kicker{color:var(--violet2);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
+.head{text-align:center;max-width:720px;margin:0 auto 44px}.head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--violet);color:#fff;border:0;border-radius:14px;padding:15px 26px;font:700 15px 'Manrope',sans-serif;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--violet2);transform:translateY(-2px)}
+.btn-wa{background:var(--green)}.btn-wa:hover{background:#1fbd5a}
+.btn-ghost{background:transparent;border:1px solid var(--line)}.btn-ghost:hover{background:var(--card2)}
+.hdr{position:sticky;top:0;z-index:50;background:rgba(15,15,20,.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hdr-in{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}
+.logo i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--violet),#c56bff);display:grid;place-items:center;font-style:normal}
+.nav{display:flex;gap:26px;font-weight:600;font-size:15px;color:var(--muted)}.nav a:hover{color:var(--ink)}
+.langs{display:flex;background:var(--card);border-radius:10px;padding:3px}
+.langs button{border:0;background:none;color:var(--muted);font:700 12px 'Manrope';padding:6px 10px;border-radius:8px;cursor:pointer}
+.langs button.active{background:var(--violet);color:#fff}
+.hero{padding:80px 0 60px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;width:900px;height:900px;left:50%;top:-500px;transform:translateX(-50%);background:radial-gradient(circle,rgba(109,94,252,.35),transparent 60%);z-index:-1}
+.pill{display:inline-block;border:1px solid var(--line);background:var(--card);padding:7px 16px;border-radius:30px;font-size:14px;font-weight:600;margin-bottom:22px}
+.hero h1{font-size:clamp(38px,6.5vw,80px);max-width:1000px;margin:0 auto 20px}
+.hero h1 span{background:linear-gradient(90deg,var(--violet2),#c56bff,#ff7ab6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:19px;color:var(--muted);max-width:680px;margin:0 auto 32px}
+.hero .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.strip{display:flex;gap:14px;margin-top:60px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.strip-in{display:flex;gap:14px;animation:strip 60s linear infinite;width:max-content}
+.strip img{width:300px;height:188px;object-fit:cover;object-position:top;border-radius:14px;border:1px solid var(--line)}
+@keyframes strip{to{transform:translateX(-50%)}}
+.why{padding:80px 0}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.why-grid div{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}
+.why-grid b{display:block;font-size:34px;font-weight:800;background:linear-gradient(90deg,var(--violet2),#c56bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.why-grid p{margin:4px 0 0;color:var(--muted);font-size:15px}
+.demos{padding:80px 0}
+.filter{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:30px}
+.filter button{border:1px solid var(--line);background:var(--card);color:var(--muted);font:700 14px 'Manrope';padding:9px 16px;border-radius:12px;cursor:pointer}
+.filter button.on{background:var(--violet);color:#fff;border-color:var(--violet)}
+.d-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.demo{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.demo:hover{transform:translateY(-6px);border-color:var(--violet)}
+.shot{position:relative;aspect-ratio:16/10;overflow:hidden;background:#000}
+.shot img.d{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 4s ease}
+.demo:hover .shot img.d{transform:scale(1.04)}
+.shot img.m{position:absolute;right:12px;bottom:-30px;width:24%;border-radius:12px;border:3px solid #000;box-shadow:0 10px 30px rgba(0,0,0,.6);transition:.4s}
+.demo:hover .shot img.m{bottom:12px}
+.num{position:absolute;top:12px;left:12px;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);color:#fff;font-weight:800;font-size:12px;padding:4px 10px;border-radius:8px}
+.d-b{padding:20px;display:flex;flex-direction:column;flex:1}
+.d-b h3{font-size:20px;margin-bottom:2px}
+.d-b .cat{color:var(--violet2);font-size:13px;font-weight:700;margin-bottom:10px}
+.d-b ul{list-style:none;padding:0;margin:0 0 16px;display:flex;flex-wrap:wrap;gap:6px;flex:1;align-content:flex-start}
+.d-b li{font-size:12px;font-weight:600;background:var(--card2);color:#cfcfe0;padding:4px 9px;border-radius:7px}
+.d-b .btns{display:flex;gap:8px}
+.d-b .btn{padding:11px 16px;font-size:14px;flex:1}
+.leads{font-size:12px;color:var(--muted);margin-top:10px}
+.packs{padding:90px 0}
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.pack{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px;display:flex;flex-direction:column}
+.pack.hot{border-color:var(--violet);background:linear-gradient(180deg,rgba(109,94,252,.16),var(--card) 50%);position:relative}
+.pack.hot::before{content:attr(data-badge);position:absolute;top:-12px;left:32px;background:var(--violet);font-size:12px;font-weight:800;padding:4px 12px;border-radius:20px}
+.pack h3{font-size:22px}.pack .price{font-size:48px;font-weight:800}.pack .price small{font-size:16px;color:var(--muted);font-weight:600}
+.pack p{color:var(--muted);margin:0 0 16px}
+.pack ul{list-style:none;padding:0;margin:0 0 24px;flex:1}
+.pack li{padding:8px 0 8px 28px;position:relative;border-bottom:1px solid var(--line);font-size:15px}
+.pack li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:800}
+.steps{padding:40px 0 90px}
+.s-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.s-grid div{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}
+.s-grid i{font-style:normal;display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--violet);font-weight:800;margin-bottom:12px}
+.s-grid h3{font-size:18px}.s-grid p{margin:0;color:var(--muted);font-size:15px}
+.faq{padding:40px 0 90px}.faq-in{max-width:820px}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:4px 22px;margin-bottom:10px}
+summary{cursor:pointer;padding:16px 0;font-weight:700;font-size:17px;list-style:none}summary::-webkit-details-marker{display:none}
+summary::after{content:'+';float:right;color:var(--violet2);font-size:22px;line-height:1}
+details[open] summary::after{content:'–'}
+details p{color:var(--muted);margin:0 0 16px}
+.cta{padding:0 0 100px}
+.cta-in{background:linear-gradient(135deg,var(--violet),#a24dff);border-radius:30px;padding:60px 40px;text-align:center}
+.cta-in p{opacity:.9;font-size:18px;max-width:600px;margin:0 auto 28px}
+.cta-in .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-in .btn-ghost{border-color:rgba(255,255,255,.4)}
+.ftr{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14px;text-align:center}
+@media(max-width:960px){.nav{display:none}.d-grid,.p-grid{grid-template-columns:1fr 1fr}.why-grid,.s-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.d-grid,.p-grid{grid-template-columns:1fr}.why-grid,.s-grid{grid-template-columns:1fr}.strip img{width:220px;height:138px}.cta-in{padding:40px 22px}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><i>✦</i><span data-s="name"></span></a>
+    <nav class="nav"><a href="#demos" data-t="nav_demos"></a><a href="#packs" data-t="nav_packs"></a><a href="#faq" data-t="nav_faq"></a></nav>
+    <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="pill reveal" data-t="pill"></span>
+    <h1 class="reveal d1" data-th="h1"></h1>
+    <p class="reveal d2" data-t="hero_p"></p>
+    <div class="btns reveal d3"><a href="#demos" class="btn" data-t="see_demos"></a><a class="btn btn-wa" data-href="wa" data-wa-text="wa_hello" data-t="write_wa"></a></div>
+  </div>
+  <div class="strip"><div class="strip-in" id="strip"></div></div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="why_k"></p><h2 data-t="why_t"></h2></div>
+    <div class="why-grid">
+      <div class="reveal"><b>24/7</b><p data-t="w1"></p></div>
+      <div class="reveal d1"><b>1 klik</b><p data-t="w2"></p></div>
+      <div class="reveal d2"><b>AZ · RU</b><p data-t="w3"></p></div>
+      <div class="reveal d3"><b>Google</b><p data-t="w4"></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="demos" id="demos">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="demos_k"></p><h2 data-t="demos_t"></h2><p data-t="demos_p"></p></div>
+    <div class="d-grid" id="d-grid"></div>
+  </div>
+</section>
+
+<section class="packs" id="packs">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="packs_k"></p><h2 data-t="packs_t"></h2></div>
+    <div class="p-grid" id="p-grid"></div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="steps_k"></p><h2 data-t="steps_t"></h2></div>
+    <div class="s-grid">
+      <div class="reveal"><i>1</i><h3 data-t="s1"></h3><p data-t="s1d"></p></div>
+      <div class="reveal d1"><i>2</i><h3 data-t="s2"></h3><p data-t="s2d"></p></div>
+      <div class="reveal d2"><i>3</i><h3 data-t="s3"></h3><p data-t="s3d"></p></div>
+      <div class="reveal d3"><i>4</i><h3 data-t="s4"></h3><p data-t="s4d"></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-in">
+    <div class="head reveal"><p class="kicker" data-t="faq_k"></p><h2 data-t="faq_t"></h2></div>
+    <div id="faq-list"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-in reveal">
+      <h2 data-t="cta_t"></h2>
+      <p data-t="cta_p"></p>
+      <div class="btns"><a class="btn btn-wa" data-href="wa" data-wa-text="wa_hello" data-t="write_wa"></a><a class="btn btn-ghost" data-href="tel"><span data-s="phone"></span></a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · Sumqayıt</div></footer>
+
+<script>
+/* ============================================================
+   VİTRİN AYARLARI — öz adınızı və nömrənizi yazın
+   (və ya: node _alətlər/nomre-deyis.js 99450xxxxxxx)
+   ============================================================ */
+window.SITE = {
+  id: 'vitrin',
+  name: 'Sayt Studiyası',
+  phone: '+994 50 000 00 00',
+  whatsapp: '994500000000',
+  floating: true,
+  t: {
+    nav_demos: { az: 'Nümunələr', ru: 'Примеры' }, nav_packs: { az: 'Qiymətlər', ru: 'Цены' }, nav_faq: { az: 'Suallar', ru: 'Вопросы' },
+    pill: { az: '📍 Sumqayıt · 3 günə hazır sayt', ru: '📍 Сумгайыт · сайт за 3 дня' },
+    h1: { az: 'Biznesiniz üçün <span>müasir sayt</span> — 100 ₼-dan', ru: '<span>Современный сайт</span> для вашего бизнеса — от 100 ₼' },
+    hero_p: { az: 'Müştəriləriniz sizi Google-da tapsın, menyunuza baxsın və bir kliklə WhatsApp-dan sifariş versin. Aylıq ödəniş yoxdur, hostinq pulsuzdur.', ru: 'Пусть клиенты находят вас в Google, смотрят меню и заказывают в WhatsApp в один клик. Без абонплаты, хостинг бесплатный.' },
+    see_demos: { az: '15 nümunəyə bax', ru: 'Смотреть 15 примеров' },
+    write_wa: { az: 'WhatsApp-a yaz', ru: 'Написать в WhatsApp' },
+    wa_hello: { az: 'Salam! Biznesim üçün sayt istəyirəm.', ru: 'Здравствуйте! Хочу сайт для своего бизнеса.' },
+    why_k: { az: 'Niyə sayt?', ru: 'Зачем сайт?' },
+    why_t: { az: 'Instagram kifayət etmir', ru: 'Одного Instagram недостаточно' },
+    w1: { az: 'Sayt gecə də işləyir — müştəri menyunu, qiymətləri, ünvanı özü görür.', ru: 'Сайт работает и ночью — клиент сам видит меню, цены и адрес.' },
+    w2: { az: 'Sifariş və rezerv birbaşa WhatsApp-ınıza hazır mesaj kimi gəlir.', ru: 'Заказы и брони приходят прямо в ваш WhatsApp готовым сообщением.' },
+    w3: { az: 'İki dildə — Sumqayıtın bütün müştəriləri üçün.', ru: 'На двух языках — для всех клиентов Сумгайыта.' },
+    w4: { az: '“Sumqayıt kafe”, “bərbər yaxında” axtaranlar sizi tapır.', ru: 'Вас находят по запросам «кафе Сумгайыт», «барбер рядом».' },
+    demos_k: { az: 'Hazır dizaynlar', ru: 'Готовые дизайны' },
+    demos_t: { az: 'Sizin sahəniz üçün nümunə', ru: 'Пример для вашей сферы' },
+    demos_p: { az: 'Hər nümunə canlıdır — açın, telefondan yoxlayın, səbətə əlavə edin, formu doldurun. Sizin adınız, şəkilləriniz və qiymətlərinizlə 3 günə hazır olur.', ru: 'Все примеры рабочие — откройте, проверьте с телефона, добавьте в корзину, заполните форму. С вашим названием, фото и ценами — готово за 3 дня.' },
+    open: { az: 'Demonu aç', ru: 'Открыть демо' },
+    want: { az: 'Bunu istəyirəm', ru: 'Хочу такой' },
+    want_msg: { az: 'Salam! Bu dizaynda sayt istəyirəm: ', ru: 'Здравствуйте! Хочу сайт в этом дизайне: ' },
+    all: { az: 'Hamısı', ru: 'Все' },
+    packs_k: { az: 'Qiymətlər', ru: 'Цены' },
+    packs_t: { az: 'Şəffaf və sadə', ru: 'Прозрачно и просто' },
+    choose: { az: 'Seç', ru: 'Выбрать' },
+    pack_msg: { az: 'Salam! Bu paketi istəyirəm: ', ru: 'Здравствуйте! Хочу пакет: ' },
+    steps_k: { az: 'Necə işləyirik', ru: 'Как мы работаем' },
+    steps_t: { az: '3 gündə saytınız hazırdır', ru: 'Ваш сайт готов за 3 дня' },
+    s1: { az: 'Dizayn seçin', ru: 'Выберите дизайн' }, s1d: { az: 'Nümunələrdən birini seçin və ya fikrinizi deyin.', ru: 'Выберите пример или расскажите свою идею.' },
+    s2: { az: 'Məlumat göndərin', ru: 'Пришлите данные' }, s2d: { az: 'Loqo, şəkillər, menyu/qiymətlər, ünvan — WhatsApp-a.', ru: 'Логотип, фото, меню/цены, адрес — в WhatsApp.' },
+    s3: { az: 'Yoxlayın', ru: 'Проверьте' }, s3d: { az: 'Hazır saytı telefonunuzda yoxlayın, düzəlişlər pulsuzdur.', ru: 'Проверьте сайт на телефоне, правки бесплатно.' },
+    s4: { az: 'Ödəyin və işə salın', ru: 'Оплатите и запускайте' }, s4d: { az: 'Ödəniş yalnız bəyəndikdən sonra. Sayt dərhal onlayn olur.', ru: 'Оплата только после одобрения. Сайт сразу онлайн.' },
+    faq_k: { az: 'Suallar', ru: 'Вопросы' }, faq_t: { az: 'Tez-tez soruşulanlar', ru: 'Частые вопросы' },
+    cta_t: { az: 'Rəqiblərinizdən əvvəl başlayın', ru: 'Начните раньше конкурентов' },
+    cta_p: { az: 'Sumqayıtda bizneslərin çoxunun hələ saytı yoxdur. İndi yazın — demonu sizin adınızla pulsuz hazırlayım.', ru: 'У большинства бизнесов Сумгайыта ещё нет сайта. Напишите сейчас — бесплатно подготовлю демо с вашим названием.' }
+  }
+};
+var DEMOS = [
+  ['01-kafe-restoran', { az: 'Kafe / restoran', ru: 'Кафе / ресторан' }, 'food', { az: ['Menyu + səbət', 'WhatsApp sifariş', 'Masa rezervi', 'Çatdırılma'], ru: ['Меню + корзина', 'Заказ в WhatsApp', 'Бронь стола', 'Доставка'] }],
+  ['15-fast-food', { az: 'Fast food / dönər', ru: 'Фастфуд / донер' }, 'food', { az: ['Tətbiq kimi menyu', 'Kombo təklifi', 'Səbət', 'Axtarış'], ru: ['Меню как в приложении', 'Комбо', 'Корзина', 'Поиск'] }],
+  ['05-tort-sirniyyat', { az: 'Tort / şirniyyat', ru: 'Торты / кондитерская' }, 'food', { az: ['Tort konstruktoru', 'Kq ilə qiymət', 'Səbət'], ru: ['Конструктор торта', 'Цена за кг', 'Корзина'] }],
+  ['02-barbershop', { az: 'Bərbərxana', ru: 'Барбершоп' }, 'beauty', { az: ['Qiymət siyahısı', 'Usta seçimi', 'Saat seçimi ilə növbə'], ru: ['Прайс', 'Выбор мастера', 'Запись по времени'] }],
+  ['03-gozellik-salonu', { az: 'Gözəllik salonu', ru: 'Салон красоты' }, 'beauty', { az: ['Kateqoriyalı xidmətlər', 'Ustalar', 'Onlayn yazılış', 'Promokod'], ru: ['Услуги по категориям', 'Мастера', 'Онлайн-запись', 'Промокод'] }],
+  ['09-fitnes', { az: 'Fitnes / idman zalı', ru: 'Фитнес / спортзал' }, 'beauty', { az: ['Abunəlik qiymətləri', 'BMI kalkulyatoru', 'Cədvəl'], ru: ['Абонементы', 'Калькулятор ИМТ', 'Расписание'] }],
+  ['04-gul-evi', { az: 'Gül mağazası', ru: 'Цветочный магазин' }, 'shop', { az: ['Kataloq', 'Ölçü seçimi', 'Çatdırılma', 'Açıqca'], ru: ['Каталог', 'Выбор размера', 'Доставка', 'Открытка'] }],
+  ['11-butik', { az: 'Geyim butiki', ru: 'Бутик одежды' }, 'shop', { az: ['Kataloq', 'Ölçü/rəng', 'Filtr və sıralama', 'Səbət'], ru: ['Каталог', 'Размер/цвет', 'Фильтр и сортировка', 'Корзина'] }],
+  ['10-telefon-temiri', { az: 'Telefon təmiri', ru: 'Ремонт телефонов' }, 'shop', { az: ['Təmir kalkulyatoru', 'Aksesuar mağazası', 'Səbət'], ru: ['Калькулятор ремонта', 'Магазин аксессуаров', 'Корзина'] }],
+  ['06-avto-servis', { az: 'Avto servis / yuma', ru: 'Автосервис / мойка' }, 'service', { az: ['Xidmətlər', 'Yuma paketləri', 'Onlayn növbə'], ru: ['Услуги', 'Пакеты мойки', 'Онлайн-запись'] }],
+  ['13-mebel', { az: 'Mebel sexi', ru: 'Мебельный цех' }, 'service', { az: ['Portfolio', 'Mətbəx kalkulyatoru', 'Pulsuz ölçü'], ru: ['Портфолио', 'Калькулятор кухни', 'Бесплатный замер'] }],
+  ['12-dasinmaz-emlak', { az: 'Daşınmaz əmlak', ru: 'Недвижимость' }, 'service', { az: ['Elan filtri', 'İpoteka kalkulyatoru', 'Əmlak qəbulu'], ru: ['Фильтр объявлений', 'Ипотечный калькулятор', 'Приём объектов'] }],
+  ['07-stomatologiya', { az: 'Stomatologiya / klinika', ru: 'Стоматология / клиника' }, 'edu', { az: ['Qiymət axtarışı', 'Həkimlər', 'Qəbula yazılış'], ru: ['Поиск по прайсу', 'Врачи', 'Запись на приём'] }],
+  ['08-tedris-merkezi', { az: 'Tədris mərkəzi', ru: 'Учебный центр' }, 'edu', { az: ['Kurslar', 'Nəticələr', 'Cədvəl', 'Sınaq dərsi'], ru: ['Курсы', 'Результаты', 'Расписание', 'Пробный урок'] }],
+  ['14-usaq-merkezi', { az: 'Uşaq mərkəzi / bağça', ru: 'Детский центр / садик' }, 'edu', { az: ['Proqramlar', 'Gündəlik rejim', 'Ad günü', 'Paketlər'], ru: ['Программы', 'Режим дня', 'День рождения', 'Пакеты'] }]
+];
+var FILTERS = [['all', 'all'], ['food', { az: 'Yemək', ru: 'Еда' }], ['beauty', { az: 'Gözəllik və idman', ru: 'Красота и спорт' }], ['shop', { az: 'Mağaza', ru: 'Магазины' }], ['service', { az: 'Xidmət', ru: 'Услуги' }], ['edu', { az: 'Tibb və təhsil', ru: 'Медицина и обучение' }]];
+var PACKS = [
+  { name: { az: 'Start', ru: 'Старт' }, price: 100, desc: { az: 'Kiçik biznes üçün ideal başlanğıc', ru: 'Идеальный старт для малого бизнеса' },
+    list: { az: ['Hazır dizayn sizin rənginizdə', 'AZ + RU dil', 'WhatsApp və zəng düymələri', 'Xəritə, iş saatları', '30-a qədər məhsul / xidmət', 'Pulsuz hostinq', '3 günə hazır'], ru: ['Готовый дизайн в ваших цветах', 'AZ + RU', 'Кнопки WhatsApp и звонка', 'Карта, часы работы', 'До 30 товаров / услуг', 'Бесплатный хостинг', 'Готово за 3 дня'] } },
+  { name: { az: 'Standart', ru: 'Стандарт' }, price: 150, hot: true, desc: { az: 'Ən çox seçilən paket', ru: 'Самый популярный пакет' },
+    list: { az: ['Start paketindəki hər şey', 'Öz domeniniz (1 il daxil)', 'Limitsiz məhsul / xidmət', 'Səbət və onlayn sifariş', 'Google Xəritədə biznes profili', 'Masalar üçün QR kod', '1 ay pulsuz dəyişiklik'], ru: ['Всё из пакета Старт', 'Свой домен (1 год включён)', 'Неограниченно товаров / услуг', 'Корзина и онлайн-заказ', 'Профиль в Google Картах', 'QR-коды для столов', '1 месяц бесплатных правок'] } },
+  { name: { az: 'Dəstək', ru: 'Поддержка' }, price: 15, month: true, desc: { az: 'Saytınız həmişə aktual qalsın', ru: 'Чтобы сайт всегда был актуален' },
+    list: { az: ['Qiymət və menyu yeniləmələri', 'Yeni şəkillər, aksiyalar', 'Bayram dizaynları', 'Texniki nəzarət', 'İstənilən vaxt dayandırmaq olar'], ru: ['Обновление цен и меню', 'Новые фото, акции', 'Праздничное оформление', 'Технический контроль', 'Можно отменить в любой момент'] } }
+];
+var FAQ = [
+  [{ az: 'Aylıq ödəniş varmı?', ru: 'Есть ли абонплата?' }, { az: 'Xeyr. Sayt bir dəfə ödənilir, hostinq pulsuzdur. Yalnız öz domen istəsəniz, ikinci ildən domen üçün ildə təxminən 20–40 ₼ ödənilir. Dəstək paketi isteğe bağlıdır.', ru: 'Нет. Сайт оплачивается один раз, хостинг бесплатный. Если нужен свой домен — со второго года около 20–40 ₼ в год. Пакет поддержки — по желанию.' }],
+  [{ az: 'Sifarişlər necə gəlir?', ru: 'Как приходят заказы?' }, { az: 'Müştəri səbəti doldurub düyməni basır — sifariş (məhsullar, cəmi, ad, telefon, ünvan) hazır mesaj kimi WhatsApp-ınıza gəlir. Heç bir proqram quraşdırmaq lazım deyil.', ru: 'Клиент собирает корзину и нажимает кнопку — заказ (товары, сумма, имя, телефон, адрес) приходит готовым сообщением в ваш WhatsApp. Ничего устанавливать не нужно.' }],
+  [{ az: 'Telefonda yaxşı görünür?', ru: 'Хорошо смотрится на телефоне?' }, { az: 'Bəli, bütün saytlar əvvəlcə telefon üçün hazırlanır — müştərilərin 90%-i telefondan girir.', ru: 'Да, все сайты в первую очередь сделаны для телефона — 90% клиентов заходят с него.' }],
+  [{ az: 'Qiymətləri sonra özüm dəyişə bilərəm?', ru: 'Смогу сам менять цены?' }, { az: 'Bəli, sizə qısa təlimat verirəm. Və ya WhatsApp-a yazın — dəstək paketində dəyişikliyi eyni gün edirəm.', ru: 'Да, дам короткую инструкцию. Или напишите в WhatsApp — в пакете поддержки внесу изменения в тот же день.' }],
+  [{ az: 'Ödəniş necə olur?', ru: 'Как происходит оплата?' }, { az: '50% başlayanda, 50% sayt hazır olub bəyəndikdən sonra. Nağd və ya karta.', ru: '50% при старте, 50% после готовности и одобрения. Наличными или на карту.' }]
+];
+</script>
+<script src="01-kafe-restoran/core.js"></script>
+<script>
+(function () {
+  var $ = Core.$, f = 'all';
+  $('#strip').innerHTML = DEMOS.concat(DEMOS).map(function (d) { return '<img src="_vitrin/thumbs/' + d[0] + '.jpg" alt="" loading="lazy">'; }).join('');
+  function render() {
+    var grid = $('#d-grid');
+    grid.innerHTML = '<div class="filter" style="grid-column:1/-1">' + FILTERS.map(function (x) { return '<button class="' + (x[0] === f ? 'on' : '') + '" data-f="' + x[0] + '">' + (x[1] === 'all' ? Core.t('all') : Core.tr(x[1])) + '</button>'; }).join('') + '</div>' +
+      DEMOS.filter(function (d) { return f === 'all' || d[2] === f; }).map(function (d, i) {
+        return '<article class="demo reveal d' + (i % 3) + '"><a class="shot" href="' + d[0] + '/" target="_blank"><img class="d" src="_vitrin/thumbs/' + d[0] + '.jpg" alt="" loading="lazy"><img class="m" src="_vitrin/thumbs/' + d[0] + '-m.jpg" alt="" loading="lazy"><span class="num">#' + d[0].slice(0, 2) + '</span></a>' +
+          '<div class="d-b"><h3>' + Core.esc(Core.tr(d[1])) + '</h3><span class="cat">AZ · RU · WhatsApp</span><ul>' + Core.tr(d[3]).map(function (x) { return '<li>' + Core.esc(x) + '</li>'; }).join('') + '</ul>' +
+          '<div class="btns"><a class="btn btn-ghost" href="' + d[0] + '/" target="_blank">' + Core.t('open') + ' ↗</a><button class="btn" data-want="' + d[0] + '">' + Core.t('want') + '</button></div></div></article>';
+      }).join('');
+    $('#p-grid').innerHTML = PACKS.map(function (p, i) {
+      return '<div class="pack reveal d' + i + (p.hot ? ' hot' : '') + '" data-badge="★ ' + (Core.lang === 'ru' ? 'Популярный' : 'Populyar') + '"><h3>' + Core.esc(Core.tr(p.name)) + '</h3><div class="price">' + p.price + ' ₼<small>' + (p.month ? (Core.lang === 'ru' ? ' /мес' : ' /ay') : (Core.lang === 'ru' ? ' один раз' : ' bir dəfə')) + '</small></div><p>' + Core.esc(Core.tr(p.desc)) + '</p><ul>' +
+        Core.tr(p.list).map(function (l) { return '<li>' + Core.esc(l) + '</li>'; }).join('') + '</ul><button class="btn ' + (p.hot ? '' : 'btn-ghost') + '" data-pack="' + i + '">' + Core.t('choose') + '</button></div>';
+    }).join('');
+    $('#faq-list').innerHTML = FAQ.map(function (q, i) { return '<details class="reveal"' + (i ? '' : ' open') + '><summary>' + Core.esc(Core.tr(q[0])) + '</summary><p>' + Core.esc(Core.tr(q[1])) + '</p></details>'; }).join('');
+    Core.observe();
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-f]'); if (b) { f = b.getAttribute('data-f'); render(); }
+    var w = e.target.closest('[data-want]'); if (w) { var d = DEMOS.find(function (x) { return x[0] === w.getAttribute('data-want'); }); Core.openWa(Core.t('want_msg') + Core.tr(d[1]) + ' (#' + d[0].slice(0, 2) + ')'); }
+    var p = e.target.closest('[data-pack]'); if (p) { var x = PACKS[+p.getAttribute('data-pack')]; Core.openWa(Core.t('pack_msg') + Core.tr(x.name) + ' — ' + x.price + ' ₼'); }
+  });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

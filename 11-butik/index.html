@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZƏRİF — Geyim butiki, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda geyim butiki: donlar, paltolar, pencəklər, ayaqqabı və aksesuarlar. Onlayn kataloq, ölçü seçimi, WhatsApp ilə sifariş və çatdırılma.">
+<meta property="og:title" content="ZƏRİF butik — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23111'/><text x='50' y='68' font-size='54' text-anchor='middle' fill='white' font-family='Arial' letter-spacing='2'>Z</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announce"><div class="an-in"><span data-t="announce"></span><span data-t="announce"></span></div></div>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <nav class="nav"><a href="#new" data-t="nav_new"></a><a href="#shop" data-t="nav_shop"></a><a href="#about" data-t="nav_about"></a><a href="#contact" data-t="nav_contact"></a></nav>
+    <a href="#top" class="logo" data-s="name"></a>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <button class="bag" data-open-cart aria-label="cart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg><b data-cart-count>0</b></button>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-img"><img src="img/hero.jpg" alt=""></div>
+  <div class="hero-txt">
+    <p class="kicker reveal" data-t="hero_kicker"></p>
+    <h1 class="reveal d1" data-th="hero_title"></h1>
+    <a href="#shop" class="btn reveal d2" data-t="hero_cta"></a>
+  </div>
+  <div class="hero-img2 reveal d2"><img src="img/about.jpg" alt=""></div>
+</section>
+
+<section class="cats wrap" id="new">
+  <a href="#shop" class="cat reveal" data-setcat="women"><img src="img/p-coat.jpg" alt="" loading="lazy"><span data-t="cat_women"></span></a>
+  <a href="#shop" class="cat reveal d1" data-setcat="men"><img src="img/p-suit.jpg" alt="" loading="lazy"><span data-t="cat_men"></span></a>
+  <a href="#shop" class="cat reveal d2" data-setcat="acc"><img src="img/p-bag.jpg" alt="" loading="lazy"><span data-t="cat_acc"></span></a>
+</section>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="shop-head reveal">
+      <h2 data-t="shop_title"></h2>
+      <div class="tools">
+        <div class="filter" id="filter"></div>
+        <select id="sort"><option value="new" data-t="sort_new"></option><option value="low" data-t="sort_low"></option><option value="high" data-t="sort_high"></option></select>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-in">
+    <h2 class="reveal" data-t="about_title"></h2>
+    <p class="reveal d1" data-t="about_text"></p>
+    <div class="perks reveal d2"><span data-t="perk1"></span><span data-t="perk2"></span><span data-t="perk3"></span></div>
+  </div>
+</section>
+
+<section class="insta">
+  <a data-href="insta" class="insta-head reveal"><span data-t="insta"></span> → @<span data-s="instagram"></span></a>
+  <div class="insta-row">
+    <img src="img/p-dress.jpg" alt="" loading="lazy"><img src="img/p-knit.jpg" alt="" loading="lazy"><img src="img/p-heels.jpg" alt="" loading="lazy"><img src="img/p-blazer.jpg" alt="" loading="lazy"><img src="img/p-scarf.jpg" alt="" loading="lazy"><img src="img/p-skirt.jpg" alt="" loading="lazy">
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap ftr-in"><span class="logo" data-s="name"></span><span>© <span data-year></span> · <span data-t="rights"></span></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, cat = 'all', sort = 'new';
+  function render() {
+    $('#filter').innerHTML = [{ id: 'all', key: 'all' }].concat(S.categories).map(function (c) {
+      return '<button class="' + (c.id === cat ? 'on' : '') + '" data-cat="' + c.id + '">' + Core.t(c.key) + '</button>';
+    }).join('');
+    var list = S.items.filter(function (it) { return cat === 'all' || it.cat === cat; }).slice();
+    if (sort === 'low') list.sort(function (a, b) { return a.price - b.price; });
+    if (sort === 'high') list.sort(function (a, b) { return b.price - a.price; });
+    if (sort === 'new') list.sort(function (a, b) { return (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0); });
+    $('#grid').innerHTML = list.map(function (it, i) {
+      return '<article class="item reveal d' + (i % 4) + '" data-view="' + it.id + '"><div class="item-img"><img src="' + it.img + '" alt="' + Core.esc(Core.tr(it.name)) + '" loading="lazy">' + (it.isNew ? '<span class="new">' + Core.t('new') + '</span>' : '') +
+        '<span class="quick">' + Core.t('add') + '</span></div><div class="item-b"><h3>' + Core.esc(Core.tr(it.name)) + '</h3><b>' + Core.money(it.price) + '</b></div><div class="dots">' +
+        it.colors.map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('') + '</div></article>';
+    }).join('');
+    Core.observe($('#grid'));
+  }
+  function view(id) {
+    var it = S.items.find(function (x) { return x.id === id; }), size = it.sizes.length === 1 ? it.sizes[0] : null, color = 0;
+    var m = Core.modal('<div class="pv"><img src="' + it.img + '" alt=""><div class="pv-b"><h3>' + Core.esc(Core.tr(it.name)) + '</h3><p class="pv-p">' + Core.money(it.price) + '</p>' +
+      '<p class="lbl">' + Core.t('color') + '</p><div class="colors">' + it.colors.map(function (c, i) { return '<button data-c="' + i + '" class="' + (i ? '' : 'on') + '" style="background:' + c + '"></button>'; }).join('') + '</div>' +
+      '<p class="lbl">' + Core.t('size') + '</p><div class="sizes">' + it.sizes.map(function (s) { return '<button data-s="' + s + '" class="' + (s === size ? 'on' : '') + '">' + s + '</button>'; }).join('') + '</div>' +
+      '<p class="warn" hidden>' + Core.t('pick_size') + '</p><button class="btn btn-full pv-add">' + Core.t('add') + '</button><button class="btn-link pv-ask">' + Core.t('ask') + ' →</button></div></div>', 'pv-modal');
+    m.el.addEventListener('click', function (e) {
+      var s = e.target.closest('.sizes [data-s]'); if (s) { size = s.getAttribute('data-s'); m.el.querySelectorAll('.sizes button').forEach(function (b) { b.classList.toggle('on', b === s); }); m.el.querySelector('.warn').hidden = true; }
+      var c = e.target.closest('[data-c]'); if (c) { color = +c.getAttribute('data-c'); m.el.querySelectorAll('.colors button').forEach(function (b) { b.classList.toggle('on', b === c); }); }
+      if (e.target.closest('.pv-add')) {
+        if (!size) { m.el.querySelector('.warn').hidden = false; return; }
+        Core.cart.add(it.id, Core.t('size') + ': ' + size + (it.colors.length > 1 ? ' · ' + Core.t('color') + ' ' + (color + 1) : ''), it.price); m.close();
+      }
+      if (e.target.closest('.pv-ask')) Core.openWa(Core.t('ask_msg') + Core.tr(it.name) + ' (' + Core.money(it.price) + ')');
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var c = e.target.closest('[data-cat]'); if (c) { cat = c.getAttribute('data-cat'); render(); }
+    var sc = e.target.closest('[data-setcat]'); if (sc) { cat = sc.getAttribute('data-setcat'); render(); }
+    var v = e.target.closest('[data-view]'); if (v) view(v.getAttribute('data-view'));
+  });
+  $('#sort').addEventListener('change', function (e) { sort = e.target.value; render(); });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

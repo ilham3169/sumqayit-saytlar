@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xaqani Service — Telefon təmiri və aksesuarlar, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda telefon təmiri: ekran, batareya, şarj yuvası, kamera. iPhone, Samsung, Xiaomi. Onlayn qiymət kalkulyatoru, 6 ay zəmanət, aksesuarlar.">
+<meta property="og:title" content="Xaqani Service — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#2563eb">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='26' y='8' width='48' height='84' rx='12' fill='%232563eb'/><path d='M54 30 40 54h12l-6 18 16-26H50z' fill='white'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><span class="lg">⚡</span><span data-s="name"></span></a>
+    <nav class="nav"><a href="#repair" data-t="nav_repair"></a><a href="#calc" data-t="nav_calc"></a><a href="#shop" data-t="nav_shop"></a><a href="#contact" data-t="nav_contact"></a></nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <button class="cart-btn" data-open-cart aria-label="cart">🛒 <b data-cart-count>0</b></button>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <span class="chip reveal" data-t="hero_chip"></span>
+      <h1 class="reveal d1" data-th="hero_title"></h1>
+      <p class="lead reveal d2" data-t="hero_text"></p>
+      <div class="btns reveal d3"><a href="#calc" class="btn" data-t="hero_cta"></a><a href="#shop" class="btn btn-2" data-t="hero_cta2"></a></div>
+      <p class="reveal d4 open" data-open></p>
+    </div>
+    <div class="hero-vis reveal d2">
+      <div class="glow"></div>
+      <img src="img/hero.jpg" alt="">
+      <div class="badge-g">6 <small data-th="badge"></small></div>
+    </div>
+  </div>
+  <div class="wrap usp">
+    <div class="reveal">🔍 <span data-t="u1"></span></div>
+    <div class="reveal d1">🛡️ <span data-t="u2"></span></div>
+    <div class="reveal d2">✅ <span data-t="u3"></span></div>
+    <div class="reveal d3">🛵 <span data-t="u4"></span></div>
+  </div>
+</section>
+
+<section class="repair" id="repair">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="repair_kicker"></p><h2 data-t="repair_title"></h2></div>
+    <div class="prob-grid" id="probs"></div>
+  </div>
+</section>
+
+<section class="calc" id="calc">
+  <div class="wrap calc-in">
+    <div class="calc-l reveal">
+      <p class="kicker" data-t="calc_kicker"></p>
+      <h2 data-t="calc_title"></h2>
+      <div class="step"><span data-t="s_brand"></span><div class="opts" id="brands"></div></div>
+      <div class="step"><span data-t="s_model"></span><div class="opts" id="models"></div></div>
+      <div class="step"><span data-t="s_problem"></span><div class="opts" id="problems"></div></div>
+    </div>
+    <div class="calc-r reveal d1">
+      <div class="phone-mock"><div class="notch"></div><div class="screen">
+        <small id="r-model"></small>
+        <h3 id="r-prob"></h3>
+        <div class="r-row"><span data-t="est_price"></span><b id="r-price"></b></div>
+        <div class="r-row"><span data-t="est_time"></span><b id="r-time"></b></div>
+        <p data-t="calc_note"></p>
+        <button class="btn" id="r-send" data-t="calc_send"></button>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="shop_kicker"></p><h2 data-t="shop_title"></h2></div>
+    <div class="shop-grid" id="shop-grid"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$, R = S.repair;
+  var st = { brand: 'Apple', model: 2, prob: 'screen' };
+  function render() {
+    $('#probs').innerHTML = S.problems.map(function (p, i) {
+      var pr = R.prices.Xiaomi[p.id][0];
+      return '<button class="prob reveal d' + (i % 4) + '" data-prob="' + p.id + '"><i>' + p.ico + '</i><h3>' + Core.esc(Core.tr(p.name)) + '</h3><span>' + (Core.lang === 'ru' ? 'от ' + Core.money(pr) : Core.money(pr) + '-dan') + '</span></button>';
+    }).join('');
+    $('#shop-grid').innerHTML = S.items.map(function (it, i) {
+      return '<article class="prod reveal d' + (i % 5) + '">' + (it.old ? '<span class="sale">-' + Math.round((1 - it.price / it.old) * 100) + '%</span>' : '') + '<img src="' + it.img + '" alt="" loading="lazy"><h3>' + Core.esc(Core.tr(it.name)) + '</h3><div class="pf"><div><b>' + Core.money(it.price) + '</b>' + (it.old ? '<s>' + Core.money(it.old) + '</s>' : '') + '</div><button data-add="' + it.id + '" aria-label="add">+</button></div></article>';
+    }).join('');
+    calc();
+    Core.observe();
+  }
+  function calc() {
+    $('#brands').innerHTML = Object.keys(R.brands).map(function (b) { return '<button class="' + (b === st.brand ? 'on' : '') + '" data-brand="' + b + '">' + b + '</button>'; }).join('');
+    var models = R.brands[st.brand]; if (st.model >= models.length) st.model = models.length - 1;
+    $('#models').innerHTML = models.map(function (m, i) { return '<button class="' + (i === st.model ? 'on' : '') + '" data-model="' + i + '">' + m + '</button>'; }).join('');
+    $('#problems').innerHTML = S.problems.map(function (p) { return '<button class="' + (p.id === st.prob ? 'on' : '') + '" data-p="' + p.id + '">' + p.ico + ' ' + Core.esc(Core.tr(p.name)) + '</button>'; }).join('');
+    var base = R.prices[st.brand][st.prob], price = Math.round(base[0] * (1 + st.model * 0.08));
+    $('#r-model').textContent = models[st.model];
+    $('#r-prob').textContent = Core.tr(S.problems.find(function (p) { return p.id === st.prob; }).name);
+    $('#r-price').textContent = '≈ ' + Core.money(price);
+    $('#r-time').textContent = '~' + base[1] + ' ' + Core.t('min');
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-brand]'); if (b) { st.brand = b.getAttribute('data-brand'); calc(); }
+    var m = e.target.closest('[data-model]'); if (m) { st.model = +m.getAttribute('data-model'); calc(); }
+    var p = e.target.closest('[data-p]'); if (p) { st.prob = p.getAttribute('data-p'); calc(); }
+    var pr = e.target.closest('[data-prob]'); if (pr) { st.prob = pr.getAttribute('data-prob'); calc(); $('#calc').scrollIntoView({ behavior: 'smooth' }); }
+  });
+  $('#r-send').addEventListener('click', function () { Core.openWa(Core.t('calc_msg') + $('#r-model').textContent + ' — ' + $('#r-prob').textContent + ' (' + $('#r-price').textContent + ')'); });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>

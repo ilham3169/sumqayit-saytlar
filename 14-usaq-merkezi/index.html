@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balaca Dahi — Uşaq inkişaf mərkəzi, Sumqayıt</title>
+<meta name="description" content="Sumqayıtda 2–7 yaş uşaqlar üçün inkişaf mərkəzi: məktəbə hazırlıq, ingilis dili, rəsm, rəqs, şahmat, loqoped. Ad günü təşkili. Tanışlıq ziyarəti pulsuz.">
+<meta property="og:title" content="Balaca Dahi — Sumqayıt">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#fff8ec">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🧸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo"><span class="lg">🧸</span><span data-s="name"></span></a>
+    <nav class="nav"><a href="#programs" data-t="nav_programs"></a><a href="#day" data-t="nav_day"></a><a href="#prices" data-t="nav_prices"></a><a href="#party" data-t="nav_party"></a><a href="#contact" data-t="nav_contact"></a></nav>
+    <div class="hdr-r">
+      <div class="langs"><button data-lang="az">AZ</button><button data-lang="ru">RU</button></div>
+      <button class="burger" data-nav-toggle aria-label="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <span class="shape sh1"></span><span class="shape sh2"></span><span class="shape sh3"></span><span class="shape sh4">★</span>
+  <div class="wrap hero-in">
+    <div>
+      <h1 class="reveal" data-th="hero_title"></h1>
+      <p class="lead reveal d1" data-t="hero_text"></p>
+      <div class="btns reveal d2"><a href="#visit" class="btn" data-t="visit"></a><a href="#programs" class="btn btn-2" data-t="hero_cta2"></a></div>
+      <p class="reveal d3 open" data-open></p>
+    </div>
+    <div class="hero-pic reveal d1"><div class="blob"><img src="img/hero.jpg" alt=""></div></div>
+  </div>
+  <div class="wrap safe">
+    <div class="reveal">📹 <span data-t="s1"></span></div>
+    <div class="reveal d1">🩺 <span data-t="s2"></span></div>
+    <div class="reveal d2">👧 <span data-t="s3"></span></div>
+  </div>
+</section>
+
+<section class="programs" id="programs">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="prog_kicker"></p><h2 data-t="prog_title"></h2></div>
+    <div class="pr-grid" id="pr-grid"></div>
+  </div>
+</section>
+
+<section class="day" id="day">
+  <div class="wrap day-in">
+    <div class="reveal">
+      <p class="kicker" data-t="day_kicker"></p>
+      <h2 data-t="day_title"></h2>
+      <img src="img/about.jpg" alt="" loading="lazy">
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<section class="prices" id="prices">
+  <div class="wrap">
+    <div class="head reveal"><p class="kicker" data-t="prices_kicker"></p><h2 data-t="prices_title"></h2></div>
+    <div class="plans" id="plans"></div>
+  </div>
+</section>
+
+<section class="party" id="party">
+  <div class="wrap party-in reveal">
+    <img src="img/p-party.jpg" alt="" loading="lazy">
+    <div>
+      <h2 data-t="party_title"></h2>
+      <p data-t="party_text"></p>
+      <b class="pp" data-t="party_price"></b>
+      <a class="btn" data-href="wa" data-wa-text="party_msg" data-t="party_btn"></a>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap visit-in">
+    <div class="reveal"><h2 data-t="form_title"></h2><p data-t="form_text"></p></div>
+    <form class="form reveal d1" data-wa-form="form_msg">
+      <label><span data-t="f_child"></span><input name="child" required data-label="f_child"></label>
+      <label><span data-t="f_age"></span><select name="age" data-label="f_age"><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option><option>7</option></select></label>
+      <label class="full"><span data-t="f_prog"></span><select name="prog" id="f-prog" data-label="f_prog"></select></label>
+      <label><span data-t="f_parent"></span><input name="parent" required data-label="f_parent"></label>
+      <label><span data-t="f_phone"></span><input name="phone" type="tel" required data-label="f_phone"></label>
+      <button class="btn full" type="submit" data-t="f_send"></button>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <h2 data-t="contact_title"></h2>
+      <p data-s="address"></p>
+      <a data-href="tel" class="tel" data-s="phone"></a>
+      <div class="links"><a data-href="wa" data-wa-text="waHello">WhatsApp</a><a data-href="insta">Instagram</a><a data-href="map" data-t="route"></a></div>
+      <h3 data-t="hours_title"></h3>
+      <ul data-hours></ul>
+    </div>
+    <div class="map reveal d1" data-map></div>
+  </div>
+</section>
+
+<footer class="ftr"><div class="wrap">© <span data-year></span> <span data-s="name"></span> · <span data-t="rights"></span></div></footer>
+
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  var S = Core.S, $ = Core.$;
+  function render() {
+    $('#pr-grid').innerHTML = S.programs.map(function (p, i) {
+      return '<article class="prog reveal d' + (i % 4) + '" style="--pc:' + p.color + '"><div class="pimg"><img src="' + p.img + '" alt="" loading="lazy"></div><span class="age">' + p.ages + ' ' + Core.t('age') + '</span><h3>' + Core.esc(Core.tr(p.name)) + '</h3><p>' + Core.esc(Core.tr(p.desc)) + '</p></article>';
+    }).join('');
+    $('#timeline').innerHTML = S.day.map(function (d, i) {
+      return '<li class="reveal d' + (i % 4) + '"><b>' + d[0] + '</b><i>' + d[1] + '</i><span>' + Core.esc(Core.tr(d[2])) + '</span></li>';
+    }).join('');
+    $('#plans').innerHTML = S.plans.map(function (p, i) {
+      return '<div class="plan reveal d' + i + (p.hot ? ' hot' : '') + '"><h3>' + Core.esc(Core.tr(p.name)) + '</h3><div class="price">' + Core.money(p.price) + '<small>' + Core.t('month') + '</small></div><ul>' +
+        Core.tr(p.list).map(function (l) { return '<li>' + Core.esc(l) + '</li>'; }).join('') + '</ul><button class="btn ' + (p.hot ? '' : 'btn-2') + '" data-plan="' + i + '">' + Core.t('choose') + '</button></div>';
+    }).join('');
+    $('#f-prog').innerHTML = S.programs.map(function (p) { return '<option>' + Core.esc(Core.tr(p.name)) + '</option>'; }).join('');
+    Core.observe();
+  }
+  document.addEventListener('click', function (e) {
+    var p = e.target.closest('[data-plan]'); if (p) { var x = S.plans[+p.getAttribute('data-plan')]; Core.openWa(Core.t('plan_msg') + Core.tr(x.name) + ' — ' + Core.money(x.price) + Core.t('month')); }
+  });
+  Core.on('lang', render);
+})();
+</script>
+</body>
+</html>
