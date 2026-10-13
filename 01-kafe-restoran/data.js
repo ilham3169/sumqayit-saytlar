@@ -7,8 +7,8 @@ window.SITE = {
   id: 'xezer-terrace',
   name: 'Xəzər Terrace',
   schemaType: 'Restaurant',
-  phone: '+994 50 000 00 00',
-  whatsapp: '994500000000',          // yalnız rəqəmlər, + olmadan
+  phone: '+994 55 966 77 44',
+  whatsapp: '994559667744',          // yalnız rəqəmlər, + olmadan
   instagram: 'xezer.terrace',
   address: { az: 'Sumqayıt, Sülh küçəsi 12, dənizkənarı bulvar', ru: 'Сумгайыт, ул. Сюльх 12, приморский бульвар' },
   map: { lat: 40.5795, lng: 49.6745, zoom: 16 },

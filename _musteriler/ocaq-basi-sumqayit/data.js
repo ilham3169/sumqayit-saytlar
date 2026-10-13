@@ -7,8 +7,8 @@ window.SITE = {
   id: 'ocaq-basi-sumqayit',
   name: 'Ocaq Başı',
   schemaType: 'Restaurant',
-  phone: '+994 50 000 00 00',
-  whatsapp: '994500000000',          // yalnız rəqəmlər, + olmadan
+  phone: '+994 55 966 77 44',
+  whatsapp: '994559667744',          // yalnız rəqəmlər, + olmadan
   instagram: '',
   address: { az: 'Sumqayıt şəhəri', ru: 'г. Сумгайыт' },
   map: { lat: 40.581046, lng: 49.67764, zoom: 17 },
